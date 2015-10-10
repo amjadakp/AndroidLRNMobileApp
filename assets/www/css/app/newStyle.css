@@ -1,0 +1,4557 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../../fonts/HelveticaNeue.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@media handheld , only screen and (max-width: 1200px) {
+	.site-IDR-container {
+		margin-right: 4%;
+	}
+	ul.custom-catalyst-list-block li {
+		width: 432px;
+		margin-right: 50px;
+		margin-bottom: 8%;
+	}
+	.cat-box {
+		width: 410px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band {
+		width: 95%;
+		padding: 0px !important;
+		top: 49%;
+	}
+	#settingsWrapper1 {
+		height: 385px !important;
+	}
+	#settingsScroller1 {
+		padding: 2%;
+	}
+	#parentLastSync {
+		margin: 10px 0px 10px 0px;
+	}
+	#modulesPreview {
+		padding-top: 75px !important;
+	}
+}
+
+@media handheld , only screen and (max-width: 800px) {
+	.site-ID-container {
+		margin: 25% auto 0 auto;
+	}
+	ul.custom-catalyst-list-block li {
+		width: 45.5%;
+		margin-right: 25px;
+		margin-bottom: 53px;
+	}
+	.cat-box {
+		width: 43%;
+		min-width: 329px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band {
+		width: 94%;
+	}
+	.feature-1, .feature-2, .feature-3 {
+		margin-right: 6%;
+	}
+	.settingsContainer {
+		width: 47%;
+	}
+	.history_row_title ul li.item-2 {
+		width: 11%;
+	}
+	.history_row_title ul li.item-1 {
+		width: 39%
+	}
+	.module-row-details #title {
+		width: 38%
+	}
+	.module-row-details #categoryId {
+		width: 13%
+	}
+	.module-row-details #moduleOption {
+		width: 15%
+	}
+	/*.mpContentWidth {
+     width: 47%!important;
+     float: right !important;
+     }*/
+}
+/* Ipad: portrait */
+@media all and (device-width: 768px) and (device-height: 1024px) and
+	(orientation:portrait) {
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#historyWrapper, #howItWorksWrapper, #moreOptWrapper {
+		top: 75px;
+	}
+	ul.custom-catalyst-list-block li {
+		width: 45.5% !important;
+		margin: 0 25px 53px 0 !important;
+	}
+	.site-IDL-container {
+		font-size: 20pt;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 183pt;
+		left: -5pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	.site-IDL-container p {
+		font-size: 12pt;
+	}
+	.custom-catalyst-list-block {
+		margin: 2% 2%
+	}
+	.downloadCatalystItem, .btn-download-offline {
+		margin-right: 5% !important;
+	}
+	.btn-download-offline {
+		width: 92px !important;
+		margin-top: 24px !important;
+	}
+	.btn-download-pause, .btn-download-cancel, .btn-download-resume {
+		margin-top: 9% !important;
+		margin-right: 8px;
+	}
+	.btn-download-resume {
+		margin-right: 7px;
+	}
+	#status {
+		margin-top: -21px !important;
+	}
+	.site-IDR-container p {
+		font-size: 7.4pt;
+	}
+	.howDownloadModuleTxt, .howTakeModuleTxt, .howSyncTxt {
+		font-size: 16px;
+	}
+	.SelectLanguageGetStarted {
+		height: 35px;
+		width: 133px;
+		padding: 0 28px 0 0;
+	}
+	.how-row-left {
+		margin: 0px 0px 0px 39px;
+	}
+	.how-row-right {
+		margin: 0px 77px 0px 0px;
+	}
+	.how-row-left span, .how-row-right span {
+		font-size: 12px;
+	}
+	.btn-downloadModulePreview {
+		margin-right: 8px;
+	}
+	.moduleLanguage {
+		right: 10px !important;
+		width: 30% !important;
+		top: 12px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 97.7% !important;
+		min-height: 116px !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		font-size: 12px;
+		height: 64px;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.tab2, .tab2.active {
+		left: 50%;
+	}
+	.tab1.active, .tab1 {
+		left: 38%;
+	}
+	.moduleTitle_bottom {
+		font-size: 14pt;
+	}
+	.history_row_title ul li.item-1, .module-row-details #title {
+		width: 32%;
+	}
+	.module-row-details #title {
+		font-size: 12px;
+	}
+	.module-row-details #categoryId {
+		width: 14%;
+	}
+	.history_row_title ul li.item-2 {
+		width: 13%;
+	}
+	.history_row_title ul li.item-3, .module-row-details #timespent {
+		width: 13%;
+	}
+	.history_row_title ul li.item-4, .module-row-details #completed {
+		width: 12%;
+	}
+	.history_row_title ul li.item-5, .module-row-details #sync {
+		width: 10%;
+	}
+	.history_row_title ul li.item-6, .module-row-details #moduleOption {
+		width: 16%;
+	}
+	.settingsContainer {
+		width: 47% !important;
+	}
+	#settingsWrapper1 {
+		height: 390px !important;
+	}
+	#timespent, #sync {
+		position: initial;
+	}
+	.downloadButtonsModulePreview .btn-download-pause, #downloadAllSection
+		.btn-download-all-pause {
+		right: 9%;
+		margin-top: 20px;
+		margin-right: 36px;
+	}
+	.downloadButtonsModulePreview .btn-download-resume, #downloadAllSection .btn-download-all-resume
+		{
+		right: 9%;
+		margin-top: 20px;
+		margin-right: 14px;
+	}
+	.ui-progressbar {
+		width: 97.6% !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		position: relative;
+		bottom: -44px;
+		right: 6px;
+	}
+	.btn-download-cancel {
+		position: relative;
+		top: 44px;
+		right: 8px;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		bottom: -36px;
+		right: 3px;
+	}
+	.btn-cancel-preview {
+		top: 36px;
+		right: 8px;
+	}
+	.status-right div {
+		margin-left: 0% !important;
+		position: relative;
+		bottom: 80px;
+		font-size: 7pt;
+		width: 91% !important;
+		margin-top: 4% !important;
+	}
+	.status-right-preview {
+		margin-top: -70%;
+		margin-left: -7% !important;
+	}
+	.downloadedBtnLabel {
+		width: 130px !important;
+		line-height: 18px !important;
+	}
+	.downloadedBtnLabelPreview {
+		margin-top: 30px;
+	}
+	.confirmDelete {
+		left: 51% !important;
+		right: 0 !important;
+	}
+	#downloadProgressAll {
+		margin-top: 105px !important;
+		margin-left: 3% !important;
+		width: 93.5% !important;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		width: 69% !important;
+		margin-top: 19px !important;
+	}
+	.btn-download-all-cancel {
+		right: 5% !important;
+		margin-top: 20px !important;
+	}
+	.btn-download-all-pause, .btn-download-all-resume {
+		margin-top: 20px !important;
+	}
+}
+/* Ipad: landscape */
+@media all and (min-width: 768px) and (max-width: 1024px) and
+	(orientation:landscape) {
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#historyWrapper, #howItWorksWrapper, #moreOptWrapper {
+		top: 75px;
+	}
+	.site-IDR-container p {
+		font-size: 1.2vw;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		height: 64px;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 196pt;
+		left: 232pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+		width: 32%;
+	}
+	.downloadCatalystItem, .btn-download-offline {
+		margin-right: 5% !important;
+	}
+	.btn-download-offline {
+		width: 92px !important;
+	}
+	.downloadedBtnLabel {
+		width: 127px !important;
+		line-height: 18px !important;
+	}
+	.nav-glyphish-example {
+		margin-left: 35px;
+	}
+	#syncFreq option {
+		width: 150px !important;
+	}
+	.nav-glyphish-example {
+		margin-left: 42px !important;
+	}
+	.moduleLanguage {
+		/* right: 20% !important; */
+		right: 30% !important;
+		text-align: right;
+		width: 24%;
+	}
+	.btn-downloadModulePreview {
+		margin-right: 8px;
+	}
+	.SelectLanguageGetStarted {
+		height: 35px;
+		width: 133px;
+		padding: 0 28px 0 0;
+	}
+	.tab2, .tab2.active {
+		left: 50%;
+	}
+	.tab1.active, .tab1 {
+		left: 38%;
+	}
+	.how-row-right {
+		margin: 0px 77px 0px 0px;
+	}
+	#settingsWrapper1 {
+		height: 410px !important;
+	}
+	#timespent, #sync {
+		position: initial;
+	}
+	.btn-pause-preview, .btn-cancel-preview, .btn-resume-preview {
+		margin-top: 0% !important;
+	}
+	.ui-progressbar {
+		width: 98% !important;
+	}
+	.status-right div {
+		margin-left: 23% !important;
+		position: relative;
+		bottom: 80px;
+		font-size: 8pt;
+	}
+	.status-right-preview {
+		margin-left: -6%;
+	}
+	.videoAudio {
+		padding-bottom: 20px;
+	}
+	.how-container {
+		margin: 6% auto 0 auto;
+	}
+}
+
+@media handheld , only screen and (max-width: 670px) {
+	form .text-field {
+		font-size: 8pt;
+	}
+	.ui-content {
+		padding: 0px !important;
+	}
+	.logincontainer .ui-corner-all {
+		margin-bottom: 0px;
+	}
+	.logincontainer .content-div {
+		margin-top: 0px;
+	}
+	#btn_SiteConfigSubmit, #btn_Login {
+		height: 30px;
+		background-size: 92% 95%;
+		outline: none;
+	}
+	.site-ID-container {
+		margin: 0px;
+		float: none;
+	}
+	.site-IDL-container, .site-IDR-container {
+		width: 250px;
+		margin: 0 auto;
+		float: none;
+	}
+	.ui-input-text {
+		padding: 0.2em 0 !important;
+	}
+	.site-IDR-container {
+		padding: 4%;
+		margin-top: 20px;
+		width: 295px;
+	}
+	.site-IDL-container {
+		padding-top: 18px;
+	}
+	#btn_SiteConfigSubmit, #btn_Login {
+		width: 105px;
+		position: relative;
+		left: 10px;
+	}
+	.site-IDR-container .content-div a, .site-IDR-container .content-div .button1
+		{
+		font-size: 9pt;
+	}
+	.site-IDR-container figure {
+		margin-bottom: 0em;
+	}
+	form .text-field.username {
+		height: 10pt;
+	}
+	.site-IDL-container p {
+		margin: 3% 0%;
+	}
+	#userLoginForm img, .reset_pwd img, .thanks_container img,
+		.resetPassword img {
+		height: 45px;
+	}
+	#btn_Login1 {
+		height: 28px;
+		margin-top: 20px;
+	}
+	#forGotPwd {
+		margin-top: 30px;
+	}
+	#forGotPwd1 {
+		width: 46% !important;
+		margin-top: 34px !important;
+	}
+	.site-IDL-container {
+		font-size: 15.5pt;
+		width: 300px;
+	}
+	#userLoginForm img, .reset_pwd img, .thanks_container img,
+		.resetPassword img {
+		height: 40px;
+	}
+	.site-IDL-container p {
+		font-size: 12.5pt;
+	}
+
+	/* header */
+	.customHeader {
+		height: 52px;
+	}
+	.tab1.active, .tab1 {
+		left: 32.5%;
+		width: 20%;
+	}
+	.logo-block {
+		width: 28%;
+		float: left;
+		height: 32px;
+		margin-top: 1.5%;
+	}
+	.tab1.active, .tab1, .tab2, .tab2.active {
+		height: 53%;
+		top: 10px;
+	}
+	.tab2, .tab2.active {
+		left: 52%;
+		width: 20%;
+	}
+	.header-right-container {
+		width: 25%;
+		margin-top: -2px;
+	}
+	.signOut-block {
+		float: right;
+		width: 100%;
+		margin-top: 12px;
+	}
+	.signBtn-icon {
+		border-radius: 5px;
+		margin: 2px 5px 0px 0px;
+		padding: 4px 4px 4px 4px;
+		font-size: 9pt;
+		font-weight: normal !important;
+		width: 60%;
+	}
+	.user-names-container {
+		position: absolute;
+		top: 24px;
+		right: 7px;
+		width: auto;
+		font-size: 7pt;
+		letter-spacing: 0px;
+		height: 13px;
+		text-shadow: none;
+		font-weight: normal;
+	}
+	.ui-btn-left {
+		background-image: URL(../../images/app/back-Icon.png) !important;
+		width: 9%;
+		height: 50%;
+		margin: 10px 0% 0% 28% !important;
+		background-size: 30px 28px !important;
+		background-repeat: no-repeat !important;
+	}
+	.pageHeader {
+		height: 0%;
+		width: 52%;
+		margin: 3% 0% 0% 77%;
+	}
+	#modulesPreview .pageHeader {
+		margin: 16px 0px 0px 50px;
+	}
+	.pageHeader, #modulesPreview .pageHeader {
+		padding: 0px;
+		font-size: 12pt !important;
+		white-space: nowrap;
+	}
+	.pageHeaderHolder {
+		width: 26%;
+		margin-top: 0px;
+	}
+	#modulesPreviewWrapper {
+		position: absolute;
+		z-index: 1;
+		/* top: 170px; */
+		width: 100%;
+		height: 100% !important;
+		overflow: hidden !important;
+	}
+	.ui-header {
+		height: 50px;
+	}
+	/*body*/
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#howItWorksWrapper, #modulesPreviewWrapper {
+		top: 52px;
+		padding-top: 13px !important;
+		overflow: visible;
+		bottom: 52px;
+	}
+	#mandatory_categoryList, #optional_categoryList, #downloadsList {
+		margin: 0 0 0 1.8%;
+	}
+	#downloadWrapper {
+		/* top: 30px !important; */
+		
+	}
+	ul.custom-catalyst-list-block li {
+		width: 88%;
+	}
+	.cat-box {
+		width: 95% !important;
+		height: 216px !important;
+		margin: 0% 0% 0% 3.5%;
+		min-width: 0px;
+		max-width: 300px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band {
+		background: transparent;
+		top: 51%;
+		padding: 0px !important;
+		width: 100%;
+	}
+	p.mpImageWidth img {
+		width: 100% !important;
+		height: 176px;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 100px;
+	}
+	/* ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 96% !Important;
+		background-color: #F0F8FF;
+		min-height: 66px;
+	} */
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		width: 100% !important;
+		padding: 2px 3px 0px 3px;
+		margin-bottom: 0px;
+		font-size: 12pt;
+		height: 36px;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title span {
+		padding: 2px 0px 0px 3px;
+		font-size: 9pt;
+	}
+	.moduleLanguage {
+		/* width: 0px; */
+		position: absolute;
+		top: 49px;
+		font-size: 9pt;
+		right: 19%;
+	}
+	.btn-download-offline {
+		padding: 0px 4px 0px 4px !important;
+		margin: 11px 0px 17px 0px !important;
+	}
+	.btn-download, #downloaded1202en {
+		width: 142px !important;
+		height: 31px;
+		position: absolute;
+		left: 0px;
+		margin: 8px 0px 0px 4px;
+		top: 71%;
+	}
+	.btn-downloadModulePreview {
+		top: 22px;
+	}
+	.btn-download-offline {
+		margin-top: 110px !important;
+		margin-right: 27% !important;
+		width: 100% !important;
+		font-size: 10px !important;
+	}
+	/* after downloading */
+	.btn-download-cancel {
+		position: relative;
+		/* bottom: 66px;
+		right: 158px; */
+		bottom: -62px;
+		right: 361px;
+	}
+	.btn-download-pause, .btn-download-resume {
+		position: relative;
+		/* bottom: 92px;
+		right: 276px; */
+		bottom: -62px;
+		right: 338px;
+	}
+	.ui-progressbar {
+		width: 94.2% !important;
+		top: 56px;
+	}
+	.btn-cancel-preview {
+		position: relative;
+		bottom: -35px;
+		right: 138px;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		position: relative;
+		bottom: 22px;
+		right: 66px;
+	}
+	.progress-module-preview {
+		width: 87.2% !important;
+		top: -10px;
+	}
+	.status-right {
+		margin-left: -31px;
+		margin-top: -9%;
+	}
+	.status-right-preview {
+		margin-top: -67%;
+		width: 214% !important;
+	}
+	.status-module-preview {
+		margin-left: -69% !important;
+	}
+	.status-right div {
+		margin-left: 0px !important;
+	}
+
+	/*course description page*/
+	#moduleList li {
+		width: 44%;
+	}
+	#moduleList li div.orange-band {
+		top: 60%;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 88% !Important;
+	}
+	#moduleList .cat-box {
+		height: 160px !important;
+	}
+	.availableOnlineModulepreview {
+		margin-top: 28px !important;
+		margin-left: 0px !important;
+		float: left;
+		right: 150px;
+		position: relative !important;
+		width: 100% !important;
+	}
+	.moduleTitle_bottom {
+		font-size: 10pt;
+		line-height: 15px;
+	}
+	.mpContentWidth {
+		font-size: 7pt;
+	}
+	.product-img p {
+		font-size: 9pt;
+		width: 97%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.videoAudio>label {
+		font-size: 8pt;
+		margin-left: -7px;
+		padding-right: 10px;
+	}
+	.SelectLanguageGetStarted {
+		width: 40%;
+		padding: 0px 25px 0 0px;
+	}
+	.modulesGetStarted {
+		cursor: pointer;
+		-webkit-appearance: none;
+		height: 2em;
+		border-radius: 4px;
+		font-size: 14px !important;
+		padding: 0px 5px;
+		color: white;
+		border: 0;
+		font-family: Helvetica !important;
+		width: 37%;
+		text-align: center;
+	}
+	#moduleDescWrapper1 {
+		overflow: hidden;
+		top: 17%;
+		height: 71px;
+		width: 44%;
+	}
+	.videoAudio {
+		top: 45px;
+	}
+	.selLanGetStarted {
+		top: 50px;
+	}
+	/*History page */
+	#historyWrapper {
+		top: 45px !important;
+		padding: 2px 6px 2px 6px;
+	}
+	.history_row_title, .module-row-details #timespent, .module-row-details #sync
+		{
+		display: none;
+	}
+	.module-row-details #title {
+		width: 100%;
+		float: left;
+		margin-right: 0%;
+		font-size: 11pt !important;
+		margin: 0px 0px 2px 0px;
+	}
+	.module-row-details #categoryId {
+		width: 54%;
+		float: left;
+		font-size: 10pt !important;
+	}
+	.module-row-details #completed {
+		width: 48% !important;
+		float: left;
+		font-size: 9pt !important;
+		margin: 2px 0px 0px 0px;
+	}
+	.module-row-details #moduleOption {
+		margin: -1% 1% 1% 0%;
+		float: right;
+		width: auto;
+	}
+	.view-module-btn {
+		font-size: 9pt;
+		padding: 5px 6px;
+	}
+	.historyImageHolder {
+		position: inherit;
+	}
+	.historyImageHolder img {
+		margin-top: 0px;
+	}
+	.historyDescHolder {
+		font-size: 10pt;
+		margin-left: 0px;
+		min-height: 0px;
+	}
+	/* How work's page */
+	.feature-1, .feature-2, .feature-3 {
+		margin-right: 2%;
+		width: 26%;
+	}
+	.feature-1 img, .feature-2 img, .feature-3 img {
+		width: 25%;
+	}
+	.feature-2 img {
+		width: 58%;
+		margin: 18px 0px 13px 0px;
+	}
+	.howDownloadModuleTxt, .howTakeModuleTxt, .howSyncTxt {
+		width: 67%;
+		font-size: 10pt;
+		text-align: center;
+	}
+	.howTakeModuleTxt {
+		width: 96%;
+	}
+	.how-row-left {
+		margin: 0 0 0 30px;
+	}
+	.how-row-right {
+		margin: 0px 37px 0px 0px;
+	}
+	.how-row-left span, .how-row-right span {
+		width: 71%;
+		font-size: 11px;
+		margin-bottom: 10px;
+	}
+	.how-row-left img, .how-row-right img {
+		margin-right: 18px;
+		width: 9%;
+		margin-top: 0px;
+	}
+	.how-row-1 {
+		margin-bottom: 5px;
+		width: 75%;
+		margin-left: 81pt;
+	}
+	.how-container {
+		width: 100%;
+		margin: 0px;
+	}
+	.how-row-left .howoffline {
+		margin: 10px 19px 0px 0px;
+	}
+	/*footer*/
+	.power-block {
+		width: 78px;
+	}
+	.power-block .footer-logo {
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		margin: 30% auto;
+	}
+	.nav-glyphish-example {
+		margin: 0 !important;
+		width: 60%;
+	}
+	.nav-glyphish-example-2 {
+		width: 25%;
+		float: right;
+	}
+	.ui-grid-c>:nth-child(n) {
+		min-width: 23% !important;
+	}
+	.nav-glyphish-example-1 {
+		width: 12%;
+		float: right;
+	}
+	.ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+		font-size: 9pt;
+	}
+	.custom-footer .ui-btn-inner .ui-icon {
+		height: 28px !important;
+		width: 28px !important;
+		margin-top: -42px !important;
+	}
+	/* more page */
+	.ui-btn-up-c {
+		border: none;
+		border-bottom: 1px solid white;
+		border-radius: 5px;
+		background: none;
+		text-shadow: none;
+		box-shadow: 0 0;
+	}
+	.moreophow {
+		background-image: url(../../images/app/info.png);
+		background-repeat: no-repeat;
+		width: 23%;
+		height: 50%;
+		background-size: 20% 70%;
+		background-position: 0% 50%;
+		margin-left: 9px;
+		color: #000 !Important;
+		font-weight: normal;
+		font-size: 15px;
+	}
+	.refreshPage {
+		background-image: url(../../images/app/sync.png);
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 50%;
+		background-size: 28% 70%;
+		background-position: 0% 50%;
+		margin-left: 9px;
+		color: #000 !Important;
+		font-weight: normal;
+		font-size: 15px;
+	}
+	.settingsPopover {
+		/*background-image: url(../../images/app/options.png);*/
+		background-repeat: no-repeat;
+		width: 16%;
+		height: 50%;
+		background-size: 25% 80%;
+		background-position: 0% 50%;
+		margin-left: 11px;
+		color: #000 !Important;
+		font-weight: normal;
+		font-size: 15px;
+	}
+	#moreopPage {
+		background-image: url(../../images/app/background.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	/*option page */
+	#moreOptScroller {
+		/*  background-color: #4682B4; Commented By Amjad */
+		padding: 7px;
+		/* margin: 10px; */
+		bottom: 54px;
+		z-index: 999;
+		overflow: hidden;
+		width: 90%;
+		/*  height: 320px; Commented By Amjad */
+		/*  top: 72px !important; Commented By Amjad */
+		position: absolute;
+		border-radius: 8px;
+		left: 10px !important;
+	}
+	.MSC_row_1 {
+		/*    margin-bottom: 3px; */
+		width: 96%;
+		display: inline-block;
+		margin-top: 1.1%;
+		margin-left: 2%;
+	}
+	div #settingsWrapper2:parent {
+		width: 90% !important;
+		left: 4.5% !important;
+	}
+	#settingsScroller2>div.MSC_row_1>div.left>div.ui-btn, #settingsScroller2>div.MSC_row_1>div.right>div.ui-btn
+		{
+		margin: 0.1em 0 !important;
+	}
+	.left {
+		border-radius: 5px;
+		text-align: left;
+		float: left;
+	}
+	.MSC_row_1 .ui-btn-inner {
+		font-size: 10pt;
+		color: #0078ae;
+		font-family: Helvetica;
+		background-color: white;
+		text-shadow: none;
+		border-radius: 5px;
+		height: 13px;
+	}
+	.MSC_row_1 .ui-btn-up-c {
+		border-bottom: none;
+		margin: 0px;
+	}
+	.right {
+		text-align: right;
+		float: right;
+	}
+	.MSC_row_2 {
+		background-color: #fff;
+		border-radius: 3px 3px 3px 8px;
+		margin-bottom: 5px;
+		/*  height: 280px; Commented By Amjad */
+		display: block;
+		overflow: auto;
+		/* display: block; */
+		overflow-x: hidden;
+		width: 96%;
+		margin-left: 2%;
+	}
+	.MSC_option {
+		margin: 0px 10px 0px 10px;
+		display: inline-block;
+		border-bottom: 1px solid #0078AE;
+		padding-bottom: 7px;
+		color: #0078AE;
+	}
+	.MSC_row_2 .MSC_option .row_1 {
+		margin-bottom: 6px;
+		display: inline-block;
+		width: 100%;
+		margin-bottom: -15px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		float: left;
+		text-align: left;
+		font-weight: normal;
+		padding-top: 7px;
+		font-size: 10pt;
+		letter-spacing: 1px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .right {
+		text-align: right;
+		float: right;
+	}
+	.MSC_option  .row_2_1, .MSC_option  .row_2 {
+		width: 75%;
+		/*display: inline-block;*/
+		font-size: 10px;
+		text-align: left;
+	}
+	.ui-field-contain {
+		padding: 0px;
+	}
+	.ui-field-contain .ui-select {
+		width: 78%;
+		display: inline-block;
+		margin-right: 6px;
+	}
+	.ui-field-contain .ui-select .ui-btn-up-c {
+		background: #0078AE !important;
+		color: white;
+		font-weight: normal;
+		margin-top: 7px;
+		box-shadow: 0px 0px 0px;
+		padding: 0px;
+		text-shadow: none;
+		font-family: Helvetica;
+		border-radius: 0px;
+	}
+	.ui-field-contain .ui-select .ui-btn-up-c .ui-btn-inner {
+		font-size: 10px;
+		padding-right: 35px;
+		width: 84%;
+	}
+	.MSC_option  .row_1 .right .slider_option .ui-btn-down-a {
+		background: #999 !important;
+		text-shadow: none;
+		-webkit-font-smoothing: antialiased;
+		font-family: Helvetica;
+		font-weight: normal;
+		border: none;
+		color: white;
+	}
+	.MSC_option .ui-btn-up-a {
+		background: #fff;
+		border: none;
+	}
+	.MSC_option:last-child {
+		border-bottom: none;
+		height: 65px;
+		padding-bottom: 0px;
+	}
+	.ui-btn-text {
+		width: 80% !important;
+	}
+	.ui-slider-switch.ui-mini .ui-slider-handle {
+		margin: 1px 0 0 -11px;
+	}
+	.ui-btn {
+		border: none;
+	}
+	.ui-li-has-icon {
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	.MSC_option:last-child  div.right {
+		width: 50%;
+	}
+	.MSC_option:last-child  div.row_2 {
+		width: 50%;
+	}
+	.MSC_row_1>div.right>div.ui-btn {
+		position: relative;
+		right: 6%;
+	}
+	.ui-field-contain {
+		position: relative;
+		top: 5px;
+		right: 17px;
+	}
+	#syncFreqDiv .ui-btn-inner {
+		width: 85%;
+	}
+	.ui-simpledialog-container {
+		border: 0px !important;
+	}
+}
+
+/*  samsung tab - portrait  */
+@media ( min-device-width : 600px) and (max-device-width: 1024px) and
+	(orientation : portrait) {
+	#mandatory_categoryList, #optional_categoryList {
+		margin-bottom: 20px;
+	}
+	#downloadsList {
+		margin-bottom: 60px;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt {
+		position: relative;
+		top: 291pt;
+		left: 100pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+		width: 50%;
+	}
+	#noDownloads {
+		position: relative;
+		top: 330pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+		width: 32%;
+		left: -19px;
+	}
+	ul.custom-catalyst-list-block li {
+		width: 50%;
+		margin: 0% 3% 9% 3%;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		font-size: 9pt;
+	}
+	.user-names-container {
+		top: 36px;
+	}
+	.cat-box {
+		max-width: 80%;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 94.5%;
+		min-height: 66px;
+	}
+	.moduleLanguage {
+		right: 31px;
+		width: 100%;
+		float: right;
+		position: absolute;
+		text-align: right;
+	}
+	#moduleDescWrapper1 {
+		top: 7%;
+	}
+	.videoAudio>label {
+		padding-right: 10px;
+	}
+	.nav-glyphish-example-1 {
+		display: none;
+	}
+	.downloadedBtnLabel {
+		line-height: 17px !important;
+		width: 128px !important;
+	}
+	.downloadedBtnLabelPreview {
+		top: 17%;
+		line-height: 17px !important;
+		width: 128px !important;
+	}
+	.SelectLanguageGetStarted {
+		height: 2em;
+	}
+	.ui-progressbar {
+		top: 56px;
+	}
+	.progress-module-preview {
+		width: 87.7%;
+	}
+	.settingsContainer {
+		width: 63%;
+		margin-right: -522px;
+	}
+	#settingsWrapper1 {
+		height: 390px !important;
+	}
+	#download-scroller ul.custom-catalyst-list-block li:last-child {
+		bottom: 11% !important;
+	}
+	.confirmDelete {
+		margin: 51px -12px 0px 2px;
+		position: absolute;
+		left: 0%;
+		right: 70.5%;
+	}
+	.how-container {
+		margin: 4% auto 0 auto;
+	}
+	#downloadAllSection {
+		height: 86px;
+	}
+	#downloadProgressAll {
+		margin-top: 75px;
+	}
+	.btn-download-all-cancel {
+		margin-top: 41px;
+	}
+	.btn-download-all-pause, .btn-download-all-resume {
+		margin-top: 41px;
+		right: 14% !important;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		width: 69% !important;
+		margin-top: 39px;
+	}
+}
+
+/*  samsung tab - landscape  */
+@media ( max-device-width : 1024px) and (min-device-width: 600px) and
+	(orientation: landscape) {
+	.site-ID-container {
+		margin: 10px 0 0 0;
+	}
+	.site-IDR-container {
+		padding-top: 10px;
+	}
+	.site-IDR-container figure {
+		margin-bottom: 10px;
+	}
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#historyWrapper, #howItWorksWrapper, #moreOptWrapper {
+		top: 75px;
+	}
+	.site-IDR-container p {
+		font-size: 1.2vw;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		height: 64px;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt {
+		position: relative;
+		top: 129pt;
+		left: 232pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+		width: 32%;
+	}
+	#noDownloads {
+		position: relative;
+		top: 148pt;
+		left: -19px;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+		width: 32%;
+		left: -19px;
+	}
+	.downloadCatalystItem, .btn-download-offline {
+		margin-right: 5% !important;
+	}
+	.btn-download-offline {
+		width: 92px !important;
+	}
+	.nav-glyphish-example {
+		margin-left: 35px;
+	}
+	.nav-glyphish-example-1 {
+		display: none;
+	}
+	#syncFreq option {
+		width: 150px !important;
+	}
+	.nav-glyphish-example {
+		margin-left: 42px !important;
+	}
+	.moduleLanguage {
+		right: 30% !important;
+		text-align: right;
+		width: 24%;
+	}
+	.btn-downloadModulePreview {
+		margin-right: 8px;
+	}
+	.downloadedBtnLabelPreview {
+		margin-top: 20px;
+		line-height: 20px !important;
+		width: 139px !important;
+	}
+	.SelectLanguageGetStarted {
+		height: 35px;
+		width: 133px;
+		padding: 0 28px 0 0;
+	}
+	.tab2, .tab2.active {
+		left: 50%;
+	}
+	.tab1.active, .tab1 {
+		left: 38%;
+	}
+	.how-row-right {
+		margin: 0px 77px 0px 0px;
+	}
+	.settingsContainer {
+		width: 37%;
+		margin-right: -420px;
+	}
+	#settingsWrapper1 {
+		height: 375px !important;
+	}
+	#timespent, #sync {
+		position: initial;
+	}
+	.ui-progressbar {
+		width: 98.5% !important;
+	}
+	.status-right-preview {
+		margin-top: -63%;
+		width: 77%;
+		margin-left: 7%;
+	}
+	.status-right div {
+		margin-left: 19% !important;
+		position: relative;
+		bottom: 80px;
+		font-size: 8pt;
+		width: 75% !important;
+	}
+	.videoAudio>label {
+		padding-right: 10px;
+	}
+	.how-container {
+		margin: 4% auto 0 auto;
+	}
+	.deleteModuleBtn {
+		margin-right: 8px;
+	}
+	.confirmDelete {
+		margin: 23px -4px 0px 0px;
+		left: 59.5%;
+		top: 54px;
+	}
+	.btn-pause-preview, .btn-cancel-preview, .btn-resume-preview {
+		margin-top: 33% !important;
+	}
+	#downloadAllSection {
+		height: 55px;
+	}
+	#downloadProgressAll {
+		width: 95.5% !important;
+		margin-top: 105px;
+	}
+	.btn-download-all-cancel {
+		margin-top: 20px;
+	}
+	.btn-download-all-pause, .btn-download-all-resume {
+		margin-top: 20px;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		width: 69% !important;
+		margin-left: 3% !important;
+		margin-top: 16px;
+	}
+}
+/* @media only screen and (device-width : 600px) and (orientation :
+	landscape) {
+} */
+@media handheld , only screen and (max-width: 540px) {
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 96.3% !Important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 70px;
+	}
+	#moduleList li div.orange-band {
+		top: 52%;
+	}
+	#moduleList .cat-box {
+		height: 135px !important;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 92% !Important;
+	}
+}
+
+@media handheld , only screen and (max-width: 400px) {
+}
+
+@media handheld , only screen and (max-width: 360px) {
+	.site-IDR-container {
+		padding: 7%;
+	}
+	.ui-listview {
+		margin: 0px !important;
+	}
+	.user-names-container {
+		top: 28px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 96.2% !Important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		width: 99.8% !important;
+		font-size: 11pt;
+	}
+	.site-ID-container {
+		margin-top: 10%;
+	}
+	#moduleDescWrapper1 {
+		top: 39%;
+		height: 128px;
+	}
+	.videoAudio {
+		top: 155px;
+	}
+	.selLanGetStarted {
+		top: 160px;
+	}
+	.pageHeader {
+		margin: 17% 0% 0% 53%;
+	}
+	#modulesPreview .pageHeader {
+		margin: 17px 0px 0px 1px;
+	}
+	.btn-download-offline {
+		margin-right: 16% !important;
+	}
+	.moduleLanguage {
+		right: 20%;
+	}
+	.logo-block {
+		margin-top: 2.5%;
+	}
+	.site-IDR-container p {
+		font-size: 7pt;
+	}
+	/* Course Description Page */
+	#modulesPreview .ui-content {
+		padding: 0px;
+	}
+	#moduleList li {
+		margin-bottom: -3px !important;
+		width: 95%;
+	}
+	.course-description ul.custom-catalyst-list-block li {
+		margin: 0px !important;
+	}
+	ul.custom-catalyst-list-block li {
+		width: 300px;
+		margin: 18px 0px 8% 0 !important;
+		clear: both;
+	}
+	.moduleTitle_top, .moduleDueDate_top {
+		display: block;
+		margin-left: 3%;
+		height: 40px;
+	}
+	.txtcenter {
+		font-size: 12pt;
+	}
+	.moduleDueDate_top {
+		margin: 2px 0px 8px 3%;
+		font-size: 9pt;
+		color: #fff;
+		height: 15px;
+	}
+	.course-description .cat-box {
+		width: 87% !important;
+		height: 178px !important;
+		margin: 0% auto;
+		padding: 10px !important;
+	}
+	.course-description ul.custom-catalyst-list-block li div.orange-band {
+		height: 72px;
+		top: 60%;
+		margin: 0 0px 0 9px !important;
+	}
+	.mpDescription {
+		margin-top: 0% !important;
+	}
+	.mpContentWidth {
+		line-height: 14px;
+	}
+	.product-img p {
+		margin: 0px;
+		font-size: 9pt;
+		margin-left: 3%;
+	}
+	.SelectLanguageGetStarted {
+		width: 40%;
+		float: left;
+	}
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#howItWorksWrapper, #modulesPreviewWrapper {
+		/* top: 8% !important; */
+		padding-top: 13px !important;
+		overflow: visible;
+		bottom: 52px;
+	}
+	.moduleTitle_bottom, .moduleDueDate, .moduleDueDate {
+		display: none;
+	}
+	#moduleDescWrapper1 {
+		overflow: hidden;
+		top: 38%;
+		height: 140px;
+		width: 94%;
+	}
+	div#moduleDescWrapper1 {
+		width: 90%;
+		margin-left: 5px;
+	}
+	.course-description .downloadAvailablity {
+		position: relative !important;
+		right: 157px !important;
+		top: 12px;
+	}
+	div#downloadButtonsModulePreview6515enIE {
+		width: 142px !important;
+		height: 31px;
+		position: absolute;
+		left: 0px;
+		margin: 8px 0px 0px 4px;
+		top: 34%;
+	}
+	.selLanGetStarted {
+		position: relative;
+		margin: 0;
+		margin-left: 3%;
+	}
+	.videoAudio {
+		margin-left: 5%;
+	}
+	.videoAudio>label {
+		font-size: 8pt;
+		padding-right: 10px;
+	}
+	#videoAudioId label input[type=radio] {
+		border: 0px;
+		padding: 0px;
+	}
+	.modulesGetStarted {
+		cursor: pointer;
+		-webkit-appearance: none;
+		height: 1.8em;
+		border-radius: 4px;
+		font-size: 14px !important;
+		padding: 0px 5px;
+		color: white;
+		border: 0;
+		font-family: Helvetica !important;
+		width: 37%;
+		text-align: center;
+	}
+	.availableOnlineModulepreview {
+		/*margin-top: 10px !important;
+         margin-right: 21% !important;*/
+		width: 100% !important;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 100% !Important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 95px;
+	}
+	#moduleList li div.orange-band {
+		top: 57%;
+	}
+	#moduleList .cat-box {
+		height: 162px !important;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 99% !Important;
+	}
+	/* after downloading */
+	.btn-download-cancel {
+		position: relative;
+		bottom: 66px;
+		right: 158px;
+	}
+	.btn-download-pause, .btn-download-resume {
+		position: relative;
+		bottom: 128px;
+		right: 95px;
+	}
+
+	/*how's work page*/
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#howItWorksWrapper, #modulesPreviewWrapper {
+		top: 46px;
+		padding-top: 13px !important;
+		overflow: visible;
+		bottom: 52px;
+	}
+	.how-container {
+		margin: 0% 0% 0% 4%;
+		width: 93%;
+	}
+	.how-row-1 {
+		margin-bottom: 0px;
+		width: 100%;
+		margin-left: 0pt;
+	}
+	.howDownloadModuleTxt, .howTakeModuleTxt, .howSyncTxt {
+		width: 61%;
+		text-align: left;
+	}
+	.feature-1, .feature-2, .feature-3 {
+		width: 100%;
+	}
+	.feature-1 {
+		margin: 0% 0% 0% 0% !important;
+		width: 100%;
+	}
+	.feature-1 img, .feature-2 img, .feature-3 img {
+		float: left;
+	}
+	.feature-1 img {
+		width: 27pt;
+		height: 32pt;
+		margin: 0px 0px 10px 2px;
+		background-size: 100% 100%;
+		position: relative;
+		top: 15px;
+	}
+	.feature-2 img {
+		width: 73pt;
+		height: 25pt;
+		margin: 18px 0px 11px 0px;
+		background-size: 100% 100%;
+	}
+	.feature-3 img {
+		width: 38pt;
+		height: 34pt;
+		margin: 0px 0px 9px 0px;
+		background-size: 100% 100%;
+	}
+	.howDownloadModuleTxt {
+		margin: 8% 0% 0% 21%;
+	}
+	.howDownloadModuleTxt, .howSyncTxt, .howTakeModuleTxt {
+		float: left;
+		font-size: 12pt;
+	}
+	.howTakeModuleTxt {
+		margin: 8% 0% 0% 8%;
+	}
+	.howSyncTxt {
+		margin: 5% 0% 0% 19%;
+	}
+	.how-row-2 {
+		margin: 0%;
+	}
+	.how-row-left {
+		margin: 0% 0% 0% 2%;
+	}
+	.how-row-left, .how-row-right {
+		width: 97%;
+	}
+	.how-row-left .howdownload, .how-row-left .hownotif, .how-row-left .howoffline,
+		.how-row-right .howsync, .how-row-right .howhistory, .how-row-right .howoptions
+		{
+		margin-top: 3px;
+	}
+	.how-row-left span, .how-row-right span {
+		font-size: 10pt;
+		width: 82%;
+		margin-bottom: 8px;
+	}
+	.how-row-right {
+		margin: 0% 1% 0% 0%;
+	}
+	.howDownloadModuleTxt {
+		margin: 10% 0% 0% 23%;
+	}
+	.howTakeModuleTxt {
+		margin: 11% 0% 0% 3%;
+	}
+	/*footer*/
+	.power-block {
+		width: 50px;
+	}
+	.power-block .footer-logo {
+		width: 90%;
+		height: 90%;
+		background-size: 90% 100%;
+		margin: 37% auto;
+	}
+	.nav-glyphish-example {
+		margin: 0 0 0 12px !important;
+		width: 63%;
+	}
+	.ui-grid-c>:nth-child(n) {
+		width: 15% !important;
+	}
+	.ui-grid-c>:nth-child(2) {
+		width: 26% !important;
+	}
+	.ui-grid-c>:nth-child(4) {
+		width: 28.7% !important;
+	}
+	.nav-glyphish-example-1 {
+		width: 12%;
+		float: right;
+		display: inline-block;
+	}
+	.ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+		font-size: 6.5pt;
+	}
+	.custom-footer .ui-btn-inner .ui-icon {
+		height: 22px !important;
+		width: 22px !important;
+		margin-top: -37px !important;
+	}
+	.ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+		font-size: 7.5pt;
+	}
+}
+
+@media handheld , only screen and (max-width: 320px) {
+	.user-names-container {
+		top: 36px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 95% !Important;
+		min-height: 66px;
+	}
+	.selLanGetStarted {
+		top: 57px;
+	}
+	#moduleDescWrapper1 {
+		top: 43%;
+		height: 57px;
+	}
+	.videoAudio {
+		top: 63px;
+		margin-left: 15px;
+	}
+	.pageHeader {
+		margin: 3% 0% 0% 42%;
+	}
+	#modulesPreview .pageHeader {
+		margin: 2px 0px 0px 10px;
+	}
+	.btn-download, .btn-download-offline {
+		font-size: 11px !important;
+	}
+	.availableOnlineModulepreview {
+		right: 185px !important;
+	}
+	.btn-download-offline {
+		font-size: 11px !important;
+	}
+	.moduleLanguage {
+		right: 20%;
+	}
+	.nav-glyphish-example {
+		margin: 0 0 0 10px !important;
+	}
+}
+
+/*  Galaxy S3 - Portrait */
+@media screen and (min-width: 360px) and (max-width: 640px) and
+	(-webkit-device-pixel-ratio: 2) and (orientation:portrait) {
+	.site-IDL-container, .site-IDR-container {
+		width: 250px;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 174pt;
+		left: -5pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	#downloadAllSection {
+		height: 86px !important;
+	}
+	#downloadAllSection .btn-download-all-cancel {
+		margin-top: 46px;
+	}
+	#downloadAllSection .btn-download-all-resume, #downloadAllSection .btn-download-all-pause
+		{
+		margin-top: 46px;
+		margin-right: 55px;
+	}
+	#downloadStatusAll {
+		left: 1% !important;
+		top: 12%;
+	}
+	#downloadProgressAll {
+		margin-top: 78px;
+	}
+	.user-names-container {
+		top: 36px;
+	}
+	.downloadAvailablity {
+		right: 196px !important;
+	}
+	.btn-download-offline {
+		margin-right: 29% !important;
+	}
+	.moduleLanguage {
+		right: 18%;
+	}
+	.site-IDL-container {
+		width: 295px;
+		font-size: 16pt;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 91.2% !Important;
+		min-height: 66px;
+	}
+	#moduleList li div.orange-band div.video-title {
+		min-height: 68px;
+		margin-left: 1px;
+		width: 94% !Important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 161px;
+	}
+	.course-description .downloadAvailablity {
+		right: 165pt !important;
+		top: 8px;
+	}
+	#landingpage {
+		padding-top: 50px;
+	}
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#howItWorksWrapper, #modulesPreviewWrapper {
+		top: 46px;
+	}
+	ul.custom-catalyst-list-block li:first-child {
+		margin-top: 12px !important;
+	}
+	ul.custom-catalyst-list-block li:last-child {
+		margin-bottom: 40px !important;
+	}
+	.ui-progressbar {
+		top: 55px !important;
+		width: 91% !important;
+	}
+	.progress-module-preview {
+		width: 93.5% !important;
+		left: 2px !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		top: 0px;
+		right: 110px;
+	}
+	.btn-download-cancel {
+		top: 69px;
+		right: 183px;
+	}
+	.btn-cancel-preview {
+		top: 28px !important;
+		right: 166px !important;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		top: -37px !important;
+		right: 100px !important;
+	}
+	.status-right div {
+		margin-left: -2% !important;
+		margin-top: 25% !important;
+		font-size: 8pt;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text {
+		width: 100% !important;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	#syncAppMobile {
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text a img {
+		width: 6%;
+		margin-top: 1em;
+		margin-left: 0.3em;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p {
+		text-align: left !important;
+		margin: 1em 0 .6em !important;
+	}
+	#syncFreqDiv>div>div>span>span.ui-btn-text {
+		font-size: 10px;
+		width: 75% !important;
+	}
+	.ui-field-contain {
+		top: -18px;
+		right: 9px;
+	}
+	.MSC_row_2 .MSC_option:last-child .row_1 {
+		margin-bottom: -30px;
+	}
+	#parentLastSync {
+		bottom: 31px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p:nth-child(3) {
+		margin-top: 0px !important;
+		color: white;
+	}
+	#settingsPopover {
+		width: 80%;
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		width: 75%;
+	}
+	.site-IDL-container p {
+		font-size: 14pt;
+	}
+	.site-IDR-container p {
+		font-size: 9pt;
+	}
+	.site-IDR-container .content-div a, .site-IDR-container .content-div .button1
+		{
+		font-size: 11pt;
+	}
+	.moduleLanguage {
+		right: 33px;
+		width: 94%;
+		text-align: right;
+		top: 51px;
+	}
+	.course-description .downloadAvailablity {
+		right: 150pt !important;
+		top: 8px;
+	}
+	.status-right div {
+		margin-left: -2% !important;
+		margin-top: 16.5% !important;
+		font-size: 8pt;
+	}
+	.status-right-preview {
+		margin-top: -57%;
+		width: 214% !important;
+		margin-left: 118%;
+	}
+	.status-module-preview {
+		margin-left: -122% !important;
+	}
+}
+/*  Galaxy S3 - landscape */
+@media screen and (min-width: 360px) and (max-width: 640px) and
+	(-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
+	#moreopPage div:nth-child(5) {
+		height: 78%;
+	}
+	#settingsWrapper2, #settingsScroller2 {
+		height: 100%;
+	}
+	#moreWrapper {
+		height: 82%;
+	}
+	.logincontainer {
+		margin-top: 4%;
+	}
+	.site-IDL-container, .site-IDR-container {
+		width: 350px;
+	}
+	.site-IDR-container {
+		padding: 1% 4% 3% 4%;
+		margin-top: 10px;
+	}
+	.site-IDL-container p {
+		margin: 1% 0% 0 0;
+	}
+	.site-IDL-container {
+		padding-top: 10px;
+		width: 400px;
+		font-size: 16pt;
+		margin-left: 19%;
+	}
+	.site-IDL-container p {
+		font-size: 12pt;
+	}
+	.site-IDR-container p {
+		font-size: 9pt;
+	}
+	.site-IDR-container .content-div a {
+		margin-top: 30px;
+	}
+	.site-IDR-container .content-div input.button {
+		margin-top: 24px;
+	}
+	.site-IDR-container .content-div a, .site-IDR-container .content-div .button1
+		{
+		font-size: 11pt;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 72pt;
+		left: -9pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	.video-title {
+		line-height: 12px;
+	}
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#modulesPreviewWrapper {
+		top: 52px;
+	}
+	#howItWorksWrapper {
+		top: 40px;
+	}
+	#downloadAllSection {
+		height: 86px !important;
+	}
+	#downloadAllSection .btn-download-all-cancel {
+		margin-top: 46px !important;
+	}
+	#downloadAllSection .btn-download-all-resume, #downloadAllSection .btn-download-all-pause
+		{
+		margin-top: 46px !important;
+		margin-right: 55px;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		top: 20%;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title span {
+		font-size: 7px !important;
+	}
+	#moreopPage .ui-content {
+		padding: 15px !important;
+	}
+	.pageHeader {
+		margin: 9% 0% 0% 57%;
+	}
+	.user-names-container {
+		top: 36px;
+	}
+	.availableOnlineModulepreview {
+		right: 181px;
+	}
+	.downloadCatalystItem, .btn-download-offline {
+		margin-right: 26% !important;
+	}
+	.howTakeModuleTxt {
+		margin: -9px 0px 0px -22px;
+	}
+	.nav-glyphish-example {
+		width: 65%;
+		margin-left: 49px !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 97% !Important;
+	}
+	.moduleLanguage {
+		right: 9% !important;
+		width: 94%;
+		text-align: right;
+		top: 24px;
+	}
+	#mandatory_categoryList>li>div.cat-box, #optional_categoryList>li>div.cat-box,
+		#downloadsList>li>div.cat-box {
+		margin: 0.1% 0% 0% 21%;
+		height: 139px !important;
+		padding: 11px !important;
+	}
+	p.mpImageWidth img {
+		height: 110px;
+	}
+	ul.custom-catalyst-list-block li:first-child {
+		margin-top: 7px !important;
+	}
+	ul.custom-catalyst-list-block li {
+		height: 176px;
+		margin-bottom: 3px;
+	}
+	#moduleList .cat-box {
+		height: 150px !important;
+		padding: 10px !important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 150px;
+	}
+	#moduleList li div.orange-band div.video-title {
+		height: 5px !important;
+		min-height: 69px;
+		margin-left: -5px;
+		width: 94% !important;
+	}
+	.availableOnlineModulepreview {
+		margin-right: 0% !important;
+		margin-top: 45% !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 94% !Important;
+		margin-left: -4px;
+		height: 10px !important;
+		min-height: 39px;
+	}
+	.btn-download {
+		background-size: 16px 18px;
+		font-size: 11px !important;
+		line-height: 18px !important;
+		height: 26px;
+		width: 137px !important;
+		top: 36%;
+		margin: 8px 0px 0px 4px;
+	}
+	.btn-downloadModulePreview {
+		top: 18%;
+	}
+	.downloadedBtnLabelPreview {
+		width: 115px !important;
+  		top: 19%;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		font-size: 8pt;
+	}
+	#moduleList li div.orange-band {
+		top: 54%;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text {
+		width: 100% !important;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	#syncAppMobile {
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text a img {
+		width: 5%;
+		margin-top: 1em;
+		margin-left: 0.3em;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p {
+		text-align: left !important;
+		margin: 1em 0 .6em !important;
+	}
+	#syncFreqDiv>div>div>span>span.ui-btn-text {
+		font-size: 10px;
+		width: 75% !important;
+	}
+	.ui-field-contain {
+		top: -18px;
+		right: 9px;
+	}
+	.MSC_row_2 .MSC_option:last-child .row_1 {
+		margin-bottom: -30px;
+	}
+	#parentLastSync {
+		bottom: 31px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p:nth-child(3) {
+		margin-top: 0px !important;
+		color: white;
+	}
+	#settingsPopover {
+		width: 80%;
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		width: 75%;
+	}
+	#downloadProgressAll {
+		top: -35px !important;
+		left: -4px !important;
+		width: 95.5% !important;
+	}
+	.ui-progressbar {
+		top: 29px !important;
+		left: -4px !important;
+		width: 93.6% !important;
+	}
+	.progress-module-preview {
+		top: 0px !important;
+		left: -5px !important;
+		width: 93% !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		top: -6px;
+		right: 122px;
+	}
+	.btn-download-cancel {
+		top: 62px;
+		right: 186px;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		top: -29px;
+		right: 105px;
+	}
+	.btn-cancel-preview {
+		top: 32px;
+		right: 172px;
+	}
+	.mpContentWidth {
+		font-size: 7pt;
+		padding-left: 10px;
+	}
+	.availableOnlineModulepreview {
+		margin-right: 0% !important;
+		margin-top: 26% !important;
+	}
+	.nav-glyphish-example-1 {
+		width: 12%;
+		float: right;
+		display: inline;
+	}
+	.tab1.active, .tab1 {
+		left: 32.5%;
+		width: 18%;
+	}
+	.SelectLanguageGetStarted {
+		height: 28px;
+		width: 120px;
+		padding: 0 28px 0 0;
+	}
+	.status-right div {
+		margin-left: 0% !important;
+		margin-top: 44% !important;
+		font-size: 8pt;
+		width: 112% !important;
+	}
+	.status-right {
+		margin-left: -46px;
+		margin-top: 18%;
+	}
+	.status-right-preview {
+		margin-top: -51%;
+		width: 214% !important;
+		margin-left: 0%;
+	}
+	.status-module-preview {
+		margin-left: -70% !important;
+	}
+}
+
+/* Note3 - Portrait */
+@media screen and (min-width: 360px) and (max-width: 640px) and
+	(-webkit-device-pixel-ratio: 3) and (orientation:Portrait) {
+	.site-IDL-container {
+		margin-left: 8%;
+		width: 300px;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 174pt;
+		left: -5pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	.site-IDL-container p {
+		font-size: 10.5pt;
+	}
+	.howDownloadModuleTxt, .howSyncTxt, .howTakeModuleTxt {
+		width: 60%;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		font-size: 9pt;
+		width: 65%
+	}
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#howItWorksWrapper, #modulesPreviewWrapper {
+		top: 46px;
+	}
+	#downloadAllSection {
+		height: 86px !important;
+	}
+	#downloadAllSection .btn-download-all-cancel {
+		margin-top: 46px;
+	}
+	#downloadAllSection .btn-download-all-resume, #downloadAllSection .btn-download-all-pause
+		{
+		margin-top: 46px;
+		margin-right: 55px;
+	}
+	#downloadStatusAll {
+		left: 1% !important;
+		top: 12%;
+		margin-top: 16px;
+	}
+	#downloadProgressAll {
+		margin-top: 18px;
+	}
+	ul.custom-catalyst-list-block li:first-child {
+		margin-top: 12px !important;
+	}
+	ul.custom-catalyst-list-block li:last-child {
+		margin-bottom: 40px !important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 161px;
+	}
+	.course-description ul.custom-catalyst-list-block li div.orange-band {
+		margin: 0 0px 0 10px !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		margin-left: 0px;
+		width: 91% !important;
+		min-height: 66px;
+	}
+	#modulesPreviewWrapper {
+		top: 6% !important;
+	}
+	.moduleTitle_top {
+		height: 39px;
+		overflow: hidden;
+	}
+	.moduleDueDate_top {
+		height: 22px;
+	}
+	#moduleDescWrapper1 {
+		top: 41%;
+		height: 112px;
+	}
+	.course-description .downloadAvailablity {
+		right: 223px !important;
+	}
+	.btn-download-offline {
+		margin-right: 29% !important;
+	}
+	.moduleLanguage {
+		right: 19%;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 93.6% !Important;
+	}
+	#moduleList li div.orange-band {
+		top: 58%;
+	}
+	#settingsPopover {
+		width: 80%;
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#refresh {
+		width: 24%;
+	}
+	.btn-download-pause, .btn-download-resume {
+		top: -1px;
+		right: 122px;
+	}
+	.btn-download-cancel {
+		right: 191px;
+		top: 68px;
+	}
+	.btn-cancel-preview {
+		top: 26px;
+		right: 187px;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		top: -42px;
+		right: 114px;
+	}
+	.ui-progressbar {
+		top: 55px !important;
+		width: 91% !important;
+	}
+	.progress-module-preview {
+		width: 94% !important;
+		margin-top: -64px;
+	}
+	.status-module-preview {
+		margin-left: -74% !important;
+		margin-top: 5px;
+	}
+	.status-right div {
+		margin-left: -10% !important;
+		margin-top: 19% !important;
+	}
+	.status-right-preview {
+		margin-top: -55%;
+		width: 200% !important;
+	}
+	.downloadedBtnLabel {
+		top: 70%;
+		line-height: 15px !important;
+	}
+	.downloadedBtnLabelPreview {
+		top: 30%;
+		line-height: 15px !important;
+	}
+	.status-right {
+		font-size: 8pt;
+	}
+	#howItWorks .pageHeader {
+		margin: 17% 0% 0% 33%;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text {
+		width: 100% !important;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	#syncAppMobile {
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text a img {
+		width: 7%;
+		margin-top: 1em;
+		margin-left: 0.3em;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p {
+		text-align: left !important;
+		margin: 1em 0 .6em !important;
+	}
+	#syncFreqDiv>div>div>span>span.ui-btn-text {
+		font-size: 10px;
+		width: 75% !important;
+	}
+	.ui-field-contain {
+		top: -18px;
+		right: 9px;
+	}
+	.MSC_row_2 .MSC_option:last-child .row_1 {
+		margin-bottom: -30px;
+	}
+	#parentLastSync {
+		bottom: 31px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p:nth-child(3) {
+		margin-top: 0px !important;
+		color: white;
+	}
+	/******* commented & Changed by Amjad on 24 Feb **************/
+	.moduleLanguage {
+		right: 33px;
+		width: 94%;
+		text-align: right;
+	}
+	/******* commented & Changed by Amjad on 24 Feb **************/
+}
+
+/* Note3 - landscape */
+@media screen and (min-width: 360px) and (max-width: 640px) and
+	(-webkit-device-pixel-ratio: 3) and (orientation:landscape) {
+	/************* Changed by Amjad on 24 Feb ******************/
+	#moreopPage div:nth-child(5) {
+		height: 78%;
+	}
+	#settingsWrapper2, #settingsScroller2 {
+		height: 100%;
+	}
+	#moreWrapper {
+		height: 82%;
+	}
+	#historyWrapper {
+		padding-right: 13px !important;
+	}
+	/************* Changed by Amjad on 24 Feb ******************/
+	.logincontainer {
+		margin-top: 4%;
+	}
+	.site-IDL-container, .site-IDR-container {
+		width: 350px;
+	}
+	.site-IDR-container {
+		padding: 1% 4% 1% 4%;
+		margin-top: 10px;
+	}
+	.site-IDL-container p {
+		margin: 1% 0% 0 0;
+	}
+	.site-IDL-container {
+		padding-top: 10px;
+		width: 400px;
+		font-size: 16pt;
+		margin-left: 19%;
+	}
+	.site-IDL-container p {
+		font-size: 12pt;
+	}
+	.site-IDR-container p {
+		font-size: 9pt;
+	}
+	.site-IDR-container .content-div a {
+		margin-top: 30px;
+	}
+	.site-IDR-container .content-div input.button {
+		margin-top: 24px;
+	}
+	.site-IDR-container .content-div a, .site-IDR-container .content-div .button1
+		{
+		font-size: 11pt;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 73pt;
+		left: -9pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#howItWorksWrapper, #modulesPreviewWrapper {
+		top: 52px;
+	}
+	#downloadAllSection {
+		height: 86px !important;
+	}
+	#downloadAllSection .btn-download-all-cancel {
+		margin-top: 46px !important;
+	}
+	#downloadAllSection .btn-download-all-resume, #downloadAllSection .btn-download-all-pause
+		{
+		margin-top: 46px !important;
+		margin-right: 55px;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		top: 20%;
+		margin-top: 16px;
+	}
+	#moreopPage .ui-content {
+		padding: 15px !important;
+	}
+	.pageHeader {
+		margin: 9% 0% 0% 57%;
+	}
+	.how-row-left span, .how-row-right span {
+		width: 88%;
+	}
+	.howDownloadModuleTxt, .howSyncTxt, .howTakeModuleTxt {
+		width: 73%;
+	}
+	#moduleList li div.orange-band {
+		top: 56%;
+		margin: 0 10px !important;
+	}
+	ul.custom-catalyst-list-block li {
+		margin-bottom: 41px;
+	}
+	ul.custom-catalyst-list-block li:first-child {
+		margin-top: 7px !important;
+	}
+	.nav-glyphish-example {
+		margin: 0 0 0 28px !important;
+	}
+	.nav-glyphish-example-1 {
+		display: inline;
+	}
+	#moduleList .cat-box {
+		margin-left: 0 !important;
+	}
+	#mandatory_categoryList>li>div.cat-box, #optional_categoryList>li>div.cat-box,
+		#downloadsList>li>div.cat-box {
+		margin: 0% 0% 0% 23%;
+		height: 139px !important;
+		padding: 11px !important;
+	}
+	p.mpImageWidth img {
+		height: 110px;
+	}
+	ul.custom-catalyst-list-block li {
+		height: 176px;
+		margin-bottom: 3px;
+	}
+	#moduleList .cat-box {
+		height: 145px !important;
+		padding: 10px !important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 144px;
+	}
+	#moduleList li div.orange-band div.video-title {
+		height: 5px !important;
+		min-height: 61px;
+		margin-left: -1px;
+		width: 94% !important;
+	}
+	.availableOnlineModulepreview {
+		margin-right: -82% !important;
+		margin-top: 34.5% !important;
+		right: 182px;
+		top: -61px;
+	}
+	.SelectLanguageGetStarted {
+		height: 2em;
+		width: 110px;
+	}
+	/* downloads */
+	#downloadProgressAll {
+		top: -37px !important;
+		left: -4px !important;
+		width: 95.5% !important;
+		margin-top: 105px;
+	}
+	.ui-progressbar {
+		top: 29px !important;
+		left: -4px !important;
+		width: 93.5% !important;
+	}
+	.progress-module-preview {
+		top: -10px !important;
+		left: 0px !important;
+		width: 93% !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		bottom: 6px;
+		right: 115px;
+	}
+	.btn-download-cancel {
+		top: 62px;
+		right: 184px;
+	}
+	.btn-cancel-preview {
+		top: 30px;
+		right: 167px;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		bottom: 33px;
+		right: 100px;
+	}
+	.status-right div {
+		margin-left: -6% !important;
+		margin-top: 9% !important;
+		font-size: 8pt;
+	}
+	.status-right-preview {
+		margin-top: -52%;
+		width: 200% !important;
+	}
+	.status-module-preview {
+		margin-left: -74% !important;
+	}
+	.downloadedBtnLabel {
+		line-height: 17px !important;
+	}
+	.downloadedBtnLabelPreview {
+		top: 18% !important;
+		line-height: 14px !important;
+	}
+	/* downloads */
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 94% !Important;
+		margin-left: -4px;
+		height: 10px !important;
+		min-height: 39px;
+	}
+	.moduleLanguage {
+		right: 28px !important;
+		width: 94%;
+		text-align: right;
+		top: 24px;
+	}
+	/******* commented & Changed by Amjad on 24 Feb **************/
+	.btn-download-offline {
+		margin-right: 25% !important;
+		margin-top: 105px !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title span {
+		font-size: 6px !important;
+	}
+	.btn-download {
+		background-size: 16px 18px;
+		font-size: 11px !important;
+		line-height: 24px !important;
+		height: 26px;
+		width: 137px !important;
+		top: 36%;
+		margin: 8px 0px 0px 4px;
+	}
+	.btn-downloadModulePreview {
+		top: 23%;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		font-size: 7pt;
+	}
+	.feature-2 img {
+		width: 58%;
+		margin: 7px 0px 13px 0px;
+	}
+	.how-row-left span, .how-row-right span {
+		width: 82%;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text {
+		width: 100% !important;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	#syncAppMobile {
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text a img {
+		width: 5%;
+		margin-top: 1em;
+		margin-left: 0.3em;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p {
+		text-align: left !important;
+		margin: 1em 0 .6em !important;
+	}
+	#syncFreqDiv>div>div>span>span.ui-btn-text {
+		font-size: 10px;
+		width: 75% !important;
+	}
+	.ui-field-contain {
+		top: -18px;
+		right: 9px;
+	}
+	.MSC_row_2 .MSC_option:last-child .row_1 {
+		margin-bottom: -30px;
+	}
+	#parentLastSync {
+		bottom: 31px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p:nth-child(3) {
+		margin-top: 0px !important;
+		color: white;
+	}
+	#settingsPopover {
+		width: 80%;
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		width: 75%;
+	}
+	.tab1.active, .tab1 {
+		left: 32.5%;
+	}
+}
+/*  HTC desire - portrait */
+@media screen and (min-width: 320px) and (max-width: 533px) and
+	(-webkit-device-pixel-ratio: 1.5) and (orientation:portrait) {
+	.site-IDL-container, .site-IDR-container {
+		width: 240px;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 142pt;
+		left: 0pt;
+		font-size: 10.6pt;
+	}
+	.course-description .downloadAvailablity {
+		right: 165px !important;
+	}
+	.btn-download-offline {
+		margin-right: 10% !important;
+	}
+	.site-IDR-container p {
+		font-size: 8pt;
+	}
+	.site-IDL-container {
+		font-size: 14pt;
+		margin-left: 9%;
+		width: 250px;
+	}
+	.site-IDL-container p {
+		font-size: 13pt;
+	}
+	#btn_forgot {
+		width: 114px !important;
+	}
+	#settingsPopover {
+		width: 80%;
+	}
+	#refresh {
+		width: 19%;
+	}
+	.cat-box {
+		width: 81% !important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 159px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text {
+		width: 100% !important;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	#syncAppMobile {
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text a img {
+		width: 6%;
+		margin-top: 1em;
+		margin-left: 0.3em;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p {
+		text-align: left !important;
+		margin: 1em 0 .6em !important;
+	}
+	#syncFreqDiv>div>div>span>span.ui-btn-text {
+		font-size: 10px;
+		width: 75% !important;
+	}
+	ul.custom-catalyst-list-block li:last-child {
+		margin-bottom: 50px !important;
+	}
+	.ui-field-contain {
+		top: -18px;
+		right: 9px;
+	}
+	.MSC_row_2 .MSC_option:last-child .row_1 {
+		margin-bottom: -30px;
+	}
+	#parentLastSync {
+		bottom: 31px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p:nth-child(3) {
+		margin-top: 0px !important;
+		color: white;
+	}
+	#settingsPopover {
+		width: 80%;
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		width: 75%;
+	}
+	#syncFreqDiv>div>div.ui-btn {
+		width: 108px;
+	}
+	.moduleTitle_top {
+		overflow: hidden;
+		height: 38px;
+	}
+	.ui-progressbar {
+		width: 94.2% !important;
+		top: 56px !important;
+	}
+	.progress-module-preview {
+		width: 98.2% !important;
+		top: -10px !important;
+	}
+	.btn-cancel-preview {
+		top: 31px !important;
+		right: 154px !important;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		top: -30px !important;
+		right: 84px !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		top: 5px;
+		right: 95px;
+	}
+	.btn-download-cancel {
+		top: 66px;
+		right: 160px;
+	}
+	.status-right {
+		margin-left: -24px;
+		margin-top: -9%;
+	}
+	.status-right div {
+		margin-left: -2% !important;
+		margin-top: 15% !important;
+		font-size: 7pt;
+	}
+	.status-right-preview {
+		margin-top: -60%;
+	}
+	.status-module-preview {
+		margin-left: -68% !important;
+	}
+	.moduleLanguage {
+		right: 16px;
+		width: 94%;
+		text-align: right;
+	}
+	ul.custom-catalyst-list-block li div.orange-band {
+		width: 95%;
+	}
+	.selLanGetStarted {
+		padding-top: 10px;
+	}
+	.downloadedBtnLabel {
+		width: 120px !important;
+	}
+	.downloadedBtnLabelPreview {
+		line-height: 18px !important;
+		width: 120px !important;
+		top: 20%;
+	}
+	#downloadAllSection {
+		height: 86px !important;
+	}
+	#downloadAllSection .btn-download-all-cancel {
+		margin-top: 46px !important;
+	}
+	#downloadAllSection .btn-download-all-resume, #downloadAllSection .btn-download-all-pause
+		{
+		margin-top: 46px !important;
+		margin-right: 55px;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		top: 20%;
+	}
+	#downloadProgressAll {
+		margin-top: 80px  !important;
+	}
+}
+
+/*  HTC desire - landscape */
+@media screen and (min-width: 320px) and (max-width: 533px) and
+	(-webkit-device-pixel-ratio: 1.5) and (orientation:landscape) {
+	#userLoginForm img {
+		height: 25px;
+	}
+	#userLoginForm .ui-input-text {
+		margin: 5px;
+	}
+	.logincontainer {
+		margin-top: 4%;
+	}
+	.site-IDL-container, .site-IDR-container {
+		width: 350px;
+	}
+	.site-IDR-container {
+		padding: 1% 4% 1% 4%;
+		margin-top: 5px;
+	}
+	.site-IDL-container p {
+		margin: 1% 0% 0 0;
+	}
+	.site-IDL-container {
+		padding-top: 10px;
+		width: 400px;
+		font-size: 14pt;
+		margin-left: 13%;
+	}
+	.site-IDL-container p {
+		font-size: 10pt;
+	}
+	.site-IDR-container p {
+		font-size: 9pt;
+	}
+	.site-IDR-container .content-div a {
+		margin-top: 30px;
+	}
+	.site-IDR-container .content-div input.button {
+		margin-top: 24px;
+	}
+	.site-IDR-container .content-div a, .site-IDR-container .content-div .button1
+		{
+		font-size: 11pt;
+	}
+	.tab1.active, .tab1 {
+		left: 32.5% !important;
+	}
+	/********* Karthik Starts ********/
+	.nav-glyphish-example-1 {
+		width: 12%;
+		float: right;
+		display: block;
+	}
+	.MSC_row_2 {
+		background-color: #fff;
+		border-radius: 3px 3px 3px 8px;
+		margin-bottom: 5px;
+		/*  height: 280px; Commented By Amjad */
+		display: block;
+		overflow: scroll;
+		/* display: block; */
+		overflow-x: hidden;
+		/* overflow-y: scroll; */
+		width: 96%;
+		margin-left: 2%;
+	}
+	/********* Karthik Ends ********/
+	/************* Changed by Amjad on 24 Feb ******************/
+	#moreopPage div:nth-child(5) {
+		height: 78%;
+	}
+	#settingsWrapper2, #settingsScroller2 {
+		height: 100%;
+	}
+	#moreWrapper {
+		height: 82%;
+	}
+	/************* Changed by Amjad on 24 Feb ******************/
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 50pt;
+		left: 0pt;
+		font-size: 13pt;
+	}
+	#btn_forgot {
+		width: 120px !important;
+	}
+	.pageHeader {
+		margin: 3% 0% 0% 55%;
+	}
+	form a.button, form input.button {
+		margin-top: 24px;
+	}
+	.user-names-container {
+		top: 36px;
+	}
+	ul.custom-catalyst-list-block li:last-child {
+		margin-bottom: 10px !important;
+	}
+	.selLanGetStarted {
+		top: 16px;
+		padding-bottom: 10px;
+	}
+	.videoAudio {
+		top: 16px;
+		padding-bottom: 5px;
+		padding-left: 4px;
+	}
+	.moduleTitle_bottom {
+		height: 30px;
+		overflow:hidden;
+	}
+	.SelectLanguageGetStarted {
+		width: 90px;
+	}
+	.SelectLanguageGetStarted, .modulesGetStarted {
+		height: 1.8em;
+	}
+	#moduleDescWrapper1 {
+		height: 53px;
+		top: 17%;
+	}
+	.nav-glyphish-example {
+		margin-left: 30px !important;
+		width: 65%;
+	}
+	.modulePreviewheight {
+		padding: 0px !important;
+	}
+	#moduleList>li>div.cat-box {
+		margin: 0;
+		height: 153px !important;
+		padding: 7px !important;
+	}
+	#mandatory_categoryList>li>div.cat-box, #optional_categoryList>li>div.cat-box,
+		#downloadsList>li>div.cat-box {
+		margin: 0% 0% 0% 16%;
+		height: 145px !important;
+		padding: 11px !important;
+	}
+	p.mpImageWidth img {
+		height: 123px;
+	}
+	ul.custom-catalyst-list-block li {
+		height: 176px;
+		margin-bottom: 3px;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 153px;
+	}
+	#moduleList li div.orange-band div.video-title {
+		height: 5px !important;
+		min-height: 75px;
+		margin-left: -4px;
+		width: 98.2% !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band {
+		width: 97%;
+		margin-left: 11px !important;
+		top: 51%;
+	}
+	.btn-downloadModulePreview {
+		margin: 8px 0px 0px 6px;
+		top: 18%;
+	}
+	.btn-download-offline {
+		margin-top: 105px !important;
+		margin-right: 10% !important;
+	}
+	.availableOnlineModulepreview {
+		margin-right: 6% !important;
+		margin-top: 30% !important;
+		font-size: 7pt !important;
+		right: 125px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		height: 51px !important;
+		min-height: 40px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		height: 27px;
+	}
+	.moduleLanguage {
+		right: 16px !important;
+		width: 94%;
+		text-align: right;
+		top: 33px;
+	}
+	/******* commented & Changed by Amjad on 24 Feb **************/
+	.btn-download {
+		background-size: 16px 18px;
+		font-size: 11px !important;
+		line-height: 24px !important;
+		height: 24px;
+		width: 115px !important;
+		top: 44%;
+	}
+	.downloadedBtnLabelPreview {
+		line-height: 19px !important;
+		width: 115px !important;
+		top: 23%;
+	}
+	.btn-downloadModulePreview {
+		top: 25%;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		font-size: 8pt;
+	}
+	#historyWrapper {
+		padding: 2px 10px 2px 6px;
+	}
+	.how-row-left span, .how-row-right span {
+		font-size: 9px;
+	}
+	.feature-2 img {
+		margin: 6px 0px 10px 0px;
+	}
+	.howTakeModuleTxt {
+		margin: 0px 0px 0px -17px;
+	}
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#modulesPreviewWrapper {
+		top: 45px;
+	}
+	#howItWorksWrapper {
+		top: 35px;
+	}
+	#moreopPage_content {
+		padding: 17px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text {
+		width: 100% !important;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	#syncAppMobile {
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text a img {
+		width: 5%;
+		margin-top: 1em;
+		margin-left: 0.3em;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p {
+		text-align: left !important;
+		margin: 1em 0 .6em !important;
+	}
+	#syncFreqDiv>div>div>span>span.ui-btn-text {
+		font-size: 10px;
+		width: 75% !important;
+	}
+	.ui-field-contain {
+		top: -18px;
+		right: 9px;
+	}
+	.MSC_row_2 .MSC_option:last-child .row_1 {
+		margin-bottom: -30px;
+	}
+	#parentLastSync {
+		bottom: 31px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p:nth-child(3) {
+		margin-top: 0px !important;
+		color: white;
+	}
+	#settingsPopover {
+		width: 80%;
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		width: 75%;
+	}
+	.video-title {
+		line-height: 12px;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title span {
+		font-size: 7px;
+	}
+	.ui-progressbar {
+		width: 96.2% !important;
+	}
+	.progress-module-preview {
+		width: 97% !important;
+		top: 0px !important;
+		left: -4px !important;
+	}
+	.status-right {
+		margin-left: -60px;
+		margin-top: -21%;
+		width: 137% !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		top: -9px;
+		right: 118px;
+	}
+	.btn-download-cancel {
+		top: 58px;
+		right: 183px;
+	}
+	.btn-cancel-preview {
+		top: 38px !important;
+		right: 137px !important;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		top: -17px !important;
+		right: 68px !important;
+	}
+	.status-right div {
+		margin-left: 10% !important;
+		margin-top: 64% !important;
+		font-size: 8pt;
+	}
+	.status-right-preview {
+		margin-top: -70%;
+	}
+	.status-module-preview {
+		margin-left: -69% !important;
+	}
+	#downloadAllSection {
+		height: 86px !important;
+	}
+	#downloadAllSection .btn-download-all-cancel {
+		margin-top: 46px !important;
+	}
+	#downloadAllSection .btn-download-all-resume, #downloadAllSection .btn-download-all-pause
+		{
+		margin-top: 46px !important;
+		margin-right: 55px;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		top: 20%;
+		margin-top: 16px;
+	}
+	#downloadProgressAll {
+		top: 67px !important;
+	}
+}
+
+/*Iphone5s portrait*/
+@media screen and (device-aspect-ratio: 40/71) and
+	(orientation:portrait) {
+	#emptySpace {
+		height: 20px;
+		width: 100%;
+		background-color: transparent;
+		z-index: 100000000;
+		position: relative;
+	}
+    /*.modulePreviewheight {
+        height: 100% !important;
+    }*/
+	#modulesPreview>#emptySpace {
+		top: -71px
+	}
+	#landingpage, #downloadsPage, #historyPage, #howItWorks, #moreopPage {
+		padding-top: 0px !important;
+	}
+	.ui-header {
+		top: 20px;
+	}
+    #modulesPreviewWrapper {
+        height: 76% !important;
+    }
+	#modulesPreviewWrapper {
+		top: 65px !important;
+	}
+	#modulesPreview .pageHeader {
+		font-size: 11pt !important;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 145pt;
+		left: -5pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	#moduleDescWrapper1 {
+		top: 39%;
+		height: 56px;
+	}
+	.moduleTitle_top, .moduleDueDate_top {
+		height: 39px;
+		overflow: hidden;
+	}
+	.user-names-container {
+		top: 30px;
+	}
+	.site-IDL-container {
+		width: 287px;
+	}
+	.ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+		font-size: 7pt;
+	}
+	.btn-download-offline {
+		margin-right: 9% !important;
+	}
+	#moduleDescWrapper1 {
+		top: 66%;
+	}
+	.videoAudio {
+		top: 85px;
+	}
+	.selLanGetStarted {
+		top: 85px;
+	}
+	.moreophow {
+		width: 28%;
+	}
+	.ui-btn-text {
+		width: 80% !important;
+	}
+	#settingsPopover {
+		width: 80%;
+	}
+	#refresh {
+		width: 16%;
+	}
+	#howItWorks_mp {
+		width: 40%;
+	}
+	#downloads {
+		width: 108%;
+	}
+	#how-it-works {
+		width: 116%;
+	}
+	#mandatory_categoryList>li>div.cat-box, #optional_categoryList>li>div.cat-box
+		{
+		margin: 5% 0% 0% 3%;
+	}
+	#historyData {
+		margin-top: 9%;
+	}
+	#howItWorksWrapper {
+		margin-top: 8%;
+	}
+	#moreopPage_content {
+		margin-top: 20%;
+	}
+	.site-IDR-container p {
+		font-size: 7pt;
+	}
+	.site-IDL-container {
+		font-size: 13.5pt;
+	}
+	.site-IDL-container p {
+		font-size: 9.5pt;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text {
+		width: 100% !important;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	#syncAppMobile {
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text a img {
+		width: 6%;
+		margin-top: 1em;
+		margin-left: 0.3em;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p {
+		text-align: left !important;
+		margin: 1em 0 .6em !important;
+	}
+	#syncFreqDiv>div>div>span>span.ui-btn-text {
+		font-size: 10px;
+		width: 75% !important;
+	}
+	.ui-field-contain {
+		top: -18px;
+		right: 9px;
+	}
+	.MSC_row_2 .MSC_option:last-child .row_1 {
+		margin-bottom: -30px;
+	}
+	#parentLastSync {
+		bottom: 31px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p:nth-child(3) {
+		margin-top: 0px !important;
+		color: white;
+	}
+	#settingsPopover {
+		width: 80%;
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		width: 75%;
+	}
+	#parentLastSync #lastMobileSync, #parentLastSync #lastSync {
+		width: 28%;
+	}
+	.ui-progressbar {
+		top: 55px !important;
+		width: 95% !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		bottom: -9px;
+		right: 95px;
+	}
+	.btn-download-cancel {
+		top: 71px;
+		right: 161px;
+	}
+	.status-right div {
+		margin-left: -2% !important;
+		margin-top: 26% !important;
+		font-size: 7pt;
+	}
+	.moduleLanguage {
+		right: 16px;
+		width: 94%;
+		text-align: right;
+	}
+
+	/*************** Karthik Changes Starts ******************/
+	.site-IDR-container {
+		padding: 4%;
+		margin-top: 20px;
+		width: 265px;
+	}
+	.cat-box {
+		width: 95% !important;
+		height: 216px !important;
+		margin: 0% 0% 0% 3.5%;
+		min-width: 0px;
+		max-width: 265px;
+	}
+	.btn-download-offline {
+		margin-right: 27% !important;
+	}
+	.moduleLanguage {
+		right: 35px;
+		width: 94%;
+		text-align: right;
+	}
+    ul.custom-catalyst-list-block li:last-child {
+        margin-bottom: 80px !important;
+    }
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 90% !Important;
+		min-height: 66px;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 94% !Important;
+	}
+	.btn-download {
+		line-height: 28px !important;
+		width: 115px !important;
+	}
+	.downloadedBtnLabelPreview {
+		top: 30%;
+	}
+	.btn-downloadModulePreview {
+		top: 13px;
+	}
+	#moduleList .btn-download-cancel {
+		top: 26px;
+		right: 167px;
+	}
+	#moduleList .ui-progressbar {
+		top: -10px !important;
+		width: 93.5% !important;
+	}
+	
+	.selLanGetStarted {
+		top: 103px;
+	}
+	.SelectLanguageGetStarted {
+		cursor: pointer;
+		-webkit-appearance: none;
+		height: 2em;
+		border-radius: 4px;
+		font-size: 14px !important;
+		padding: 0px 5px;
+		float: left;
+		background: #0078AE;
+		color: white;
+		border: 0;
+		font-family: Helvetica !important;
+		width: 30%;
+		text-align: center;
+		background-image: url(../../images/app/drpdwn.png);
+		background-repeat: no-repeat;
+		background-position: 90% 50%;
+		outline: none;
+	}
+	.modulesGetStarted {
+		cursor: pointer;
+		-webkit-appearance: none;
+		height: 2em;
+		border-radius: 4px;
+		font-size: 14px !important;
+		padding: 0px 5px;
+		color: white;
+		border: 0;
+		font-family: Helvetica !important;
+		width: 37%;
+		text-align: center;
+	}
+	#moduleList .btn-download-pause, .btn-download-resume {
+		bottom: 37px;
+		right: 103px;
+	}
+	.status-module-preview {
+		margin-left: -67% !important;
+		margin-top: 14px;
+	}
+	.ui-progressbar {
+		top: 55px !important;
+		width: 90% !important;
+	}
+	.status-right div {
+		margin-left: -2% !important;
+		margin-top: 12% !important;
+		font-size: 7pt;
+	}
+	.btn-download-pause, .btn-download-resume {
+		bottom: -6px;
+		right: 110px;
+	}
+	.btn-download-cancel {
+		top: 71px;
+		right: 177px;
+	}
+	.course-description .downloadAvailablity {
+		position: relative !important;
+		right: 183px !important;
+		top: 7px;
+	}
+	#downloadAllSection {
+		margin-top: 54px;
+		height: 64px;
+	}
+	#downloadProgressAll {
+		margin-top: 27px;
+	}
+	.btn-download-all-cancel {
+		margin-top: 26px;
+	}
+	.btn-download-all-pause, .btn-download-all-resume {
+		margin-right: 54px !important;
+		margin-top: 26px;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		width: 48% !important;
+		margin-top: 24px;
+	}
+
+	/*************** Karthik Changes Ends ******************/
+}
+
+/*Iphone5s landscape*/
+@media screen and (min-width: 320px) and (max-width: 568px) and
+	(-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
+	/************* Changed by Amjad on 24 Feb ******************/
+	#moreopPage div:nth-child(5) {
+		height: 78%;
+	}
+	#settingsWrapper2, #settingsScroller2 {
+		height: 100%;
+	}
+	#moreWrapper {
+		height: 82%;
+	}
+	/************* Changed by Amjad on 24 Feb ******************/
+	#emptySpace {
+		height: 20px;
+		width: 100%;
+		background-color: transparent;
+		z-index: 100000000;
+		position: relative;
+	}
+	#modulesPreview>#emptySpace {
+		top: -71px
+	}
+	#landingpage, #downloadsPage, #historyPage, #howItWorks, #moreopPage {
+		padding-top: 0px !important;
+	}
+	.ui-header {
+		top: 20px;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 52pt;
+		left: -9pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	ul.custom-catalyst-list-block li div.orange-band {
+		width: 94%;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 97% !Important;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 93% !Important;
+	}
+	.user-names-container {
+		top: 24px;
+	}
+	.selLanGetStarted {
+		top: 9px;
+	}
+	.videoAudio {
+		top: 42px;
+	}
+	#mandatory_categoryList>li>div.cat-box {
+		margin: 7% 0% 0% 18%;
+	}
+	.nav-glyphish-example {
+		width: 65%;
+		margin-left: 37px !important;
+	}
+	.site-IDR-container .content-div a, .site-IDR-container 
+    .content-div .button1 {
+		font-size: 9pt;
+	}
+	.site-IDR-container p {
+		font-size: 7pt;
+	}
+	#historyData {
+		margin-top: 6%;
+	}
+	#howItWorksScroller {
+		margin-top: 3%;
+	}
+	#moreopPage_content {
+		margin-top: 10%;
+	}
+	#mandatory_categoryList>li>div.cat-box {
+		margin: 9% 0% 0% 13%;
+		height: 139px !important;
+		padding: 11px !important;
+	}
+	p.mpImageWidth img {
+		height: 110px;
+	}
+	#mandatory_categoryList>li>div.cat-box, #optional_categoryList>li>div.cat-box
+		{
+		margin: 4% 0% 0% 16%;
+		height: 139px !important;
+		padding: 11px !important;
+	}
+        #modulesPreviewWrapper {
+            height: 76% !important;
+        }
+	#mandatory_catalysts, #optional_catalysts, #downloadWrapper,
+		#howItWorksWrapper, #modulesPreviewWrapper {
+		top: 63px;
+	}
+	p.mpImageWidth img {
+		height: 110px;
+	}
+	ul.custom-catalyst-list-block li {
+		height: 176px;
+		margin-bottom: 3px;
+	}
+	#moduleList .cat-box {
+		height: 114px !important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 117px;
+	}
+	#moduleList li div.orange-band div.video-title {
+		height: 55px !important;
+		min-height: 55px;
+		margin-left: 0px;
+	}
+	.availableOnlineModulepreview {
+        right: 160px;
+		margin-top: 50% !important;
+		font-size: 8px !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 100% !Important;
+		margin-left: -4px;
+		height: 10px !important;
+		min-height: 39px;
+	}
+	.moduleLanguage {
+		right: 15%;
+		top: 25px;
+		font-size: 8pt;
+	}
+	.btn-download {
+		background-size: 16px 18px;
+		font-size: 11px !important;
+		line-height: 18px !important;
+		height: 26px;
+		width: 115px !important;
+		top: 36%;
+	}
+	.downloadedBtnLabelPreview {
+		top: 20%;
+	}
+	.btn-downloadModulePreview {
+		top: 25%;
+	}
+	.moduleTitle_bottom {
+		font-size: 7pt;
+		line-height: 12px;
+	}
+	.product-img p {
+		font-size: 7pt;
+	}
+	#moduleDescWrapper1 {
+		top: 15%;
+		height: 57px;
+	}
+	.videoAudio>label {
+		font-size: 7pt;
+	}
+	.videoAudio {
+		top: 17px;
+	}
+    ul.custom-catalyst-list-block li:last-child {
+        margin-bottom: 40px !important;
+    }
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		font-size: 8pt;
+	}
+	.feature-2 img {
+		margin: 8px 0px 8px 0px;
+	}
+	.how-row-left span, .how-row-right span {
+		font-size: 8px;
+		margin-bottom: 7px;
+	}
+	.howTakeModuleTxt {
+		margin: 2px 0px 0px -22px;
+	}
+
+	/* downloads */
+	.ui-progressbar {
+		top: 29px !important;
+		left: -4px !important;
+		width: 99% !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		bottom: 5px;
+		right: 115px;
+	}
+	.btn-download-cancel {
+		top: 62px;
+		right: 184px;
+	}
+	.status-right div {
+		margin-left: 0% !important;
+		margin-top: 22% !important;
+		font-size: 8pt;
+	}
+	/* downloads */
+	/******* commented & Changed by Amjad on 24 Feb **************/
+	.moduleLanguage {
+		right: 11px;
+		width: 94%;
+		text-align: right;
+	}
+	/******* commented & Changed by Amjad on 24 Feb **************/
+
+	/****************** Karthik Starts ******************/
+	.site-IDL-container {
+		padding-top: 5px;
+		width: 430px;
+		font-size: 14pt;
+		margin-left: 15%;
+	}
+	.site-IDR-container {
+		padding: 1% 4% 3% 4%;
+		margin-top: 5px;
+	}
+	.site-IDL-container p {
+		font-size: 9pt;
+	}
+	.moduleLanguage {
+		right: 5% !important;
+	}
+	#modulesPreview .btn-download-cancel {
+		top: 36px;
+		right: 147px;
+	}
+	.selLanGetStarted {
+		top: 35px;
+	}
+	.tab1.active, .tab1 {
+		left: 34.5%;
+		width: 18%;
+	}
+	.status-right {
+		margin-left: -46px;
+		margin-top: 3%;
+	}
+	#moduleList .cat-box {
+		height: 134px !important;
+	}
+	#moduleList li div.orange-band div.video-title {
+		height: 70px !important;
+		min-height: 70px;
+		margin-left: -5px;
+	}
+	.status-right-preview {
+		margin-top: -60%;
+		width: 214% !important;
+		margin-left: 0%;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 134px;
+	}
+	#moduleList li div.orange-band {
+		top: 48%;
+	}
+	#modulesPreview .ui-progressbar {
+		top: 0px !important;
+		left: -4px !important;
+		width: 98% !important;
+	}
+	#moduleList li div.orange-band div.video-title {
+		height: 55px !important;
+		min-height: 64px;
+		margin-left: -5px;
+	}
+	#moduleDescWrapper1 {
+		top: 23%;
+		height: 57px;
+	}
+	#modulesPreview .btn-download-pause, .btn-download-resume {
+		top: -21px;
+		right: 84px;
+	}
+	.status-right div {
+		margin-left: 0% !important;
+		margin-top: 0% !important;
+		font-size: 8pt;
+	}
+	#moduleList li div.orange-band div.video-title {
+		height: 55px !important;
+		min-height: 70px;
+		margin-left: -5px;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 98.5% !Important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		top: -4px;
+		right: 122px;
+	}
+	.downloadCatalystItem, .btn-download-offline {
+		margin-right: 1% !important;
+	}
+	/****************** Karthik Ends ******************/
+	#downloadAllSection {
+		margin-top: 55px;
+	}
+	#downloadProgressAll {
+		top: 84px !important;
+		width: 96% !important;
+	}
+	#downloadAllSection .btn-download-all-cancel {
+		margin-top: 30px !important;
+	}
+	#downloadAllSection .btn-download-all-resume, #downloadAllSection .btn-download-all-pause
+		{
+		margin-top: 30px !important;
+		margin-right: 55px;
+	}
+	#downloadStatusAll {
+		width: 58%;
+		margin-top: 34px;
+	}
+}
+
+/*Iphone4 Portrait */
+@media screen and (device-aspect-ratio: 2/3) and (orientation:portrait)
+	{
+	#emptySpace {
+		height: 21px;
+		width: 100%;
+		background-color: transparent;
+		z-index: 100000000;
+		position: relative;
+		bottom: 15%;
+	}
+	.modulePreviewheight {
+		height: 100% !important;
+	}
+	#landingpage, #downloadsPage, #historyPage, #howItWorks, #moreopPage {
+		padding-top: 0px !important;
+	}
+	ul.custom-catalyst-list-block li:last-child {
+		margin-bottom: 80px !important;
+	}
+	.ui-header {
+		top: 20px;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 113pt;
+		left: -5pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	.btn-download-offline {
+		margin-right: 9% !important;
+	}
+	.downloadedBtnLabel {
+		width: 118px !important;
+		line-height: 17px !important;
+	}
+	.downloadedBtnLabelPreview {
+		top: 25%;
+	}
+	#moduleList li div.orange-band {
+		top: 60%;
+	}
+	#moduleList li div.orange-band div.video-title {
+		width: 93.6% !Important;
+	}
+	.course-description .downloadAvailablity {
+		right: 180px !important;
+	}
+	.moduleTitle_top {
+		height: 39px;
+		margin-top: 6px;
+		overflow: hidden;
+	}
+	.moduleDueDate_top {
+		height: 15px;
+		overflow: hidden;
+	}
+	.how-row-left span, .how-row-right span {
+		font-size: 8.5pt;
+		margin-bottom: 4px;
+	}
+	.pageHeader {
+		margin: 3% 0% 0% 30%;
+	}
+	#modulesPreviewWrapper {
+		top: 11% !important;
+	}
+	#moduleList .cat-box {
+		height: 155px !important;
+	}
+	#moduleDescWrapper1 {
+		top: 54%;
+		height: 43px;
+	}
+	.videoAudio {
+		top: 44px;
+	}
+	.selLanGetStarted {
+		top: 54px;
+	}
+	.user-names-container {
+		top: 30px;
+	}
+	.ui-navbar li .ui-btn-icon-top .ui-btn-inner {
+		font-size: 6pt;
+	}
+	.availableOnlineModulepreview {
+		right: 173px !important;
+	}
+	.ui-grid-c>:nth-child(n) {
+		width: 21% !important;
+	}
+	.ui-grid-c>:nth-child(2) {
+		width: 25% !important;
+	}
+	.ui-grid-c>:nth-child(4) {
+		width: 28% !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 95% !Important;
+	}
+	#historyWrapper {
+		top: 63px !important;
+	}
+	#howItWorksWrapper {
+		top: 15% !important;
+	}
+	#moreopPage_content {
+		margin-top: 53px;
+	}
+	#settingsPopover {
+		width: 80%;
+	}
+	#refresh {
+		width: 18%;
+	}
+	.feature-2 img {
+		margin: 18px 0px 8px 0px;
+	}
+	.feature-1 img {
+		margin: 0px 0px 7px 2px;
+	}
+	.feature-3 img {
+		margin: 0px 0px 7px 0px;
+	}
+	.how-row-left img, .how-row-right img {
+		width: 20px;
+		height: 20px;
+	}
+	.how-row-right .howoptions {
+		margin-right: 19px
+	}
+	.how-row-left .howoffline {
+		margin: 10px 19px 0px -5px;
+		width: 30px;
+	}
+	.site-IDR-container p {
+		font-size: 7pt;
+	}
+	.site-IDL-container {
+		font-size: 13.5pt;
+		width: 285px;
+	}
+	.site-IDL-container p {
+		font-size: 9.5pt;
+	}
+	.enter-siteId-link a {
+		font-size: 9pt !important;
+	}
+	.enter-siteId-link {
+		right: 4%;
+	}
+	#parentLastSync #lastMobileSync, #parentLastSync #lastSync {
+		width: 28%;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text {
+		width: 100% !important;
+		border-bottom: 1px solid white;
+		border-radius: 0px;
+	}
+	#syncAppMobile {
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text a img {
+		width: 6%;
+		margin-top: 1em;
+		margin-left: 0.3em;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p {
+		text-align: left !important;
+		margin: 1em 0 .6em !important;
+	}
+	#syncFreqDiv>div>div>span>span.ui-btn-text {
+		font-size: 10px;
+		width: 75% !important;
+	}
+	.ui-field-contain {
+		top: -18px;
+		right: 9px;
+	}
+	.MSC_row_2 .MSC_option:last-child .row_1 {
+		margin-bottom: -30px;
+	}
+	#parentLastSync {
+		bottom: 31px;
+	}
+	#moreopPage_content>ul>li>div>div.ui-btn-text p:nth-child(3) {
+		margin-top: 0px !important;
+		color: white;
+	}
+	#settingsPopover {
+		width: 80%;
+		padding: 0 0px 0 60px;
+		margin: 0px;
+	}
+	.MSC_row_2 .MSC_option .row_1 .left {
+		width: 75%;
+	}
+
+	/* downloads */
+	.btn-download-pause, .btn-download-resume {
+		top: 6px;
+	}
+	.btn-download-cancel {
+		top: 66px;
+	}
+	.status-right div {
+		margin-left: -3% !important;
+		margin-top: 22% !important;
+		font-size: 7pt;
+	}
+	/* downloads */
+	/******* commented & Changed by Amjad on 24 Feb **************/
+	.moduleLanguage {
+		right: 16px;
+		width: 94%;
+		text-align: right;
+	}
+	/******* commented & Changed by Amjad on 24 Feb **************/
+
+	/***** Karthik Changes Start*****/
+	.cat-box {
+		width: 95% !important;
+		height: 216px !important;
+		margin: 0% 0% 0% 3.5%;
+		min-width: 0px;
+		max-width: 265px;
+	}
+	.moduleLanguage {
+		right: 35px;
+		width: 94%;
+		text-align: right;
+	}
+    ul.custom-catalyst-list-block li:last-child {
+        margin-bottom: 40px !important;
+    }
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 90% !important;
+	}
+	#mandatory_categoryList>li>div.cat-box, #optional-scroller>ul>li>div.cat-box
+		{
+		margin: 5% 0% 0% 2.1%%;
+	}
+	.btn-download-offline {
+		margin-right: 25% !important;
+	}
+	.btn-download-cancel {
+		top: 70px;
+		position: relative;
+		bottom: 66px;
+		right: 175px;
+	}
+	.ui-progressbar {
+		top: -10px !important;
+		width: 90% !important;
+	}
+	.progress-module-preview {
+		width: 93.5% !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		position: relative;
+		bottom: 128px;
+		right: 110px;
+	}
+	.btn-cancel-preview {
+		top: 31px !important;
+		right: 167px !important;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		top: -32px !important;
+		right: 103px !important;
+	}
+	.status-right-preview {
+		margin-top: -54%;
+	}
+	.status-right div {
+		margin-left: -3% !important;
+		margin-top: 12% !important;
+		font-size: 7pt;
+	}
+	.site-IDR-container {
+		padding: 7% 0;
+	}
+	form {
+		margin: 0 auto;
+		text-align: left;
+		padding: 1px 15px;
+	}
+	#downloadAllSection {
+		margin-top: 54px;
+		height: 64px;
+	}
+	#downloadProgressAll {
+		margin-top: 96px;
+	}
+	.btn-download-all-cancel {
+		margin-top: 30px;
+	}
+	.btn-download-all-pause, .btn-download-all-resume {
+		margin-right: 54px !important;
+		margin-top: 30px;
+	}
+	#downloadStatusAll {
+		left: 0% !important;
+		width: 48% !important;
+		margin-top: 24px;
+	}
+}
+
+/*Iphone4 Landscape*/
+@media screen and (min-width: 320px) and (max-width: 480px) and
+	(-webkit-device-pixel-ratio: 2) and (orientation:landscape) {
+	/************* Changed by Amjad on 24 Feb ******************/
+	#moreopPage_content .ui-listview>.ui-li.ui-first-child {
+		margin-top: 72px;
+	}
+	#moreopPage div:nth-child(5) {
+		height: 78%;
+	}
+	#settingsWrapper2, #settingsScroller2 {
+		height: 100%;
+	}
+	#moreWrapper {
+		height: 82%;
+	}
+	/************* Changed by Amjad on 24 Feb ******************/
+	#emptySpace {
+		height: 20px;
+		width: 100%;
+		background-color: transparent;
+		z-index: 100000000;
+		position: relative;
+	}
+	.modulePreviewheight {
+		height: 100% !important;
+	}
+	#landingpage, #downloadsPage, #historyPage, #howItWorks, #moreopPage {
+		padding-top: 0px !important;
+	}
+	ul.custom-catalyst-list-block li:last-child {
+		margin-bottom: 40px !important;
+	}
+	.ui-header {
+		top: 20px;
+	}
+	#noAssignedModules_req, #noAssignedModules_opt, #noDownloads {
+		position: relative;
+		top: 52pt;
+		left: -9pt;
+		font-size: 12pt;
+		color: white;
+		text-align: center;
+	}
+	#mandatory_categoryList>li>div.cat-box, #optional_categoryList>li>div.cat-box
+		{
+		margin: 3% 0% 0% 16%;
+	}
+	.availableOnlineModulepreview {
+		width: 117% !important;
+		margin-right: -86% !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band {
+		width: 94%;
+	}
+	.mpContentWidth {
+		font-size: 5pt;
+	}
+	.moduleLanguage {
+		right: 17%;
+	}
+	#moduleList li div.orange-band div.video-title {
+		height: 5px !important;
+		min-height: 63px;
+		margin-left: -5px;
+		width: 97% !Important;
+	}
+	.user-names-container {
+		top: 26px;
+	}
+	.site-IDL-container {
+		width: 285px;
+	}
+	#modulesPreviewWrapper {
+		top: 63px !important;
+	}
+	#moduleDescWrapper1 {
+		top: 55px;
+		height: 57px;
+	}
+	.videoAudio {
+		top: 10px;
+	}
+	.selLanGetStarted {
+		top: -2px;
+	}
+	#mandatory_categoryList>li>div.cat-box {
+		height: 139px !important;
+		padding: 11px !important;
+	}
+	.btn-download-offline {
+		margin-right: 3% !important;
+	}
+	p.mpImageWidth img {
+		height: 110px;
+	}
+	.nav-glyphish-example {
+		width: 65%;
+		margin-left: 24px !important;
+	}
+	.ui-grid-c>:nth-child(4) {
+		width: 30%;
+	}
+	ul.custom-catalyst-list-block li {
+		height: 176px;
+		margin-bottom: 3px;
+	}
+	#moduleList .cat-box {
+		height: 144px !important;
+	}
+	#moduleList p.mpImageWidth img {
+		height: 144px;
+	}
+	#moduleList li div.orange-band {
+		top: 56%;
+	}
+	.availableOnlineModulepreview {
+		margin-right: -82% !important;
+		margin-top: 49% !important;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title {
+		width: 100% !Important;
+		margin-left: -4px;
+		height: 10px !important;
+		min-height: 39px;
+	}
+	/******* commented & Changed by Amjad on 24 Feb **************/
+	.moduleLanguage {
+		/* right: 15%;
+        top: 25px;
+        font-size: 8pt; */
+		right: 9px;
+		top: 25px;
+		font-size: 8pt;
+		width: 94%;
+		text-align: right;
+	}
+	/******* commented & Changed by Amjad on 24 Feb **************/
+	.btn-download {
+		background-size: 16px 18px;
+		font-size: 11px !important;
+		line-height: 18px !important;
+		height: 26px;
+		width: 137px !important;
+		top: 36%;
+	}
+	.downloadedBtnLabel {
+		width: 110px !important;
+	}
+	.downloadedBtnLabelPreview {
+		top: 16%;
+	}
+	.btn-downloadModulePreview {
+		top: 16%;
+	}
+	ul.custom-catalyst-list-block li div.orange-band div.video-title-txt {
+		font-size: 8pt;
+	}
+	#moreopPage_content {
+		margin-top: 12%;
+	}
+	.videoAudio>label {
+		font-size: 6pt;
+	}
+	form .text-field {
+		font-size: 7pt;
+	}
+	.site-IDR-container {
+		padding: 7%;
+	}
+	form {
+		padding-top: 1px;
+		/* width: 81%;*/
+		margin: 0 auto;
+	}
+	.site-IDR-container figure {
+		margin-bottom: 0.5em;
+	}
+	#forGotPwd {
+		font-size: 8pt;
+		padding-top: 33px;
+	}
+	#btn_Login1 {
+		height: 24px;
+		margin-top: 22px;
+		width: 36% !important;
+	}
+	.site-IDL-container {
+		padding-top: 11px;
+	}
+	.site-IDL-container p {
+		font-size: 12.5pt;
+	}
+	#userLoginForm img, .reset_pwd img, .thanks_container img,
+		.resetPassword img {
+		height: 40px;
+	}
+	.site-IDR-container p {
+		font-size: 6.5pt;
+	}
+	.logincontainer {
+		margin-top: 8%;
+	}
+	#btn_GetSiteID {
+		font-size: 7pt;
+	}
+	#btn_SiteConfigSubmit {
+		margin-top: 24px;
+		height: 26px;
+		left: 7px;
+		width: 100px;
+	}
+	#btn_GetSiteID {
+		padding-top: 36px;
+		font-size: 7pt;
+	}
+	.site-IDL-container {
+		font-size: 12.5pt;
+	}
+	.power-block {
+		width: 63px;
+	}
+
+	/* downloads */
+	.ui-progressbar {
+		top: 29px !important;
+		left: -4px !important;
+		width: 99% !important;
+	}
+	.progress-module-preview {
+		top: -10px !important;
+		left: -5px !important;
+		width: 97% !important;
+	}
+	.btn-download-pause, .btn-download-resume {
+		bottom: 5px;
+		right: 115px;
+	}
+	.btn-download-cancel {
+		top: 62px;
+		right: 184px;
+	}
+	.status-right div {
+		margin-left: 0% !important;
+		margin-top: 22% !important;
+		font-size: 8pt;
+	}
+	.status-right-preview {
+		margin-top: -74%;
+		width: 214% !important;
+		margin-left: 0%;
+	}
+	/* downloads */
+	/***** Karthik Changes Starts*****/
+	.tab1.active, .tab1 {
+		left: 34.5%;
+		width: 18%;
+	}
+	.moduleLanguage {
+		right: 4% !important;
+		width: 94%;
+		text-align: right;
+		top: 24px;
+	}
+	.btn-download-pause, .btn-download-resume {
+		top: -4px;
+		right: 122px;
+		bottom: 5px;
+		right: 119px;
+	}
+	.btn-cancel-preview {
+		top: 41px !important;
+		right: 123px !important;
+	}
+	.btn-pause-preview, .btn-resume-preview {
+		top: -11px !important;
+		right: 57px !important;
+	}
+	.status-right {
+		margin-left: -46px;
+		margin-top: 0%;
+	}
+	.status-right div {
+		margin-left: 0% !important;
+		margin-top: 0% !important;
+		font-size: 8pt;
+	}
+	.SelectLanguageGetStarted {
+		height: 28px;
+		width: 93px;
+		padding: 0 28px 0 0;
+	}
+	.modulesGetStarted {
+		cursor: pointer;
+		-webkit-appearance: none;
+		height: 2em;
+		border-radius: 4px;
+		font-size: 14px !important;
+		padding: 0px 15px 0px 5px;
+		color: white;
+		border: 0;
+		font-family: Helvetica !important;
+		width: 37%;
+		text-align: center;
+	}
+	.selLanGetStarted {
+		top: 34px;
+	}
+	.availableOnlineModulepreview {
+		right: 128px;
+	}
+	.site-IDR-container {
+		padding: 2% 0;
+		margin-top: 4px;
+	}
+	#emptySpace {
+		height: 3px;
+		width: 100%;
+		background-color: transparent;
+		z-index: 100000000;
+		position: relative;
+	}
+	#forGotPwd {
+		font-size: 8pt;
+		padding-top: 0px;
+	}
+	#btn_Login1 {
+		height: 30px;
+		margin-top: 22px;
+		width: 36% !important;
+	}
+	.site-IDL-container {
+		padding-top: 5px;
+		width: 370px;
+		font-size: 16pt;
+		margin-left: 13%;
+	}
+	.site-IDL-container p {
+		font-size: 9.5pt;
+	}
+	form {
+		margin: 0 auto;
+		text-align: left;
+		padding: 1px 15px;
+	}
+	#btn_GetSiteID {
+		padding-top: 0px;
+		font-size: 7pt;
+	}
+	/***** Karthik Changes End*****/
+	#downloadAllSection {
+		margin-top: 72px;
+		height: 64px !important;
+	}
+}

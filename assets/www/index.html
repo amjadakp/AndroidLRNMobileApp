@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+		<title>LRN Mobile Catalyst</title>
+		<link rel="stylesheet" href="css/core/jquery.mobile-1.3.0.min.css" />
+		<link rel="stylesheet" href="css/app/lrn-theme.css" />
+		<link rel="stylesheet"
+			href="css/core/jquery.mobile.simpledialog.min.css" />
+		<link rel="stylesheet" href="css/app/newStyle.css" />
+		<link rel="stylesheet" href="css/core/themes/base/jquery-ui.css" />
+		<link rel="stylesheet"
+			href="css/core/themes/base/jquery.ui.progressbar.css" />
+		<style type="text/css">
+			iframe {
+				height: 100%;
+				display: block;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body onLoad="LoadCordova();">
+		<div class="settingsContainer" id="settingsSection"></div>
+		<!-- #siteconfig start-->
+		<div data-role="page" id="siteconfig" class="scrollable">
+			<div id="emptySpace"></div>
+			<div data-role="content">
+				<div id="siteIdWrapper">
+					<div id="siteIdScroller">
+						<div class="site-ID-container">
+							<div class="site-IDR-container">
+								<form id="siteIDConfig" autocomplete="off">
+									<span> Let&#x92;s Get Started. </span>
+									<p>Enter the Site ID provided by your Site Administrator.</p>
+									<div class="logincontainer">
+										<input type="text" class="text-field username"
+											placeholder="Site ID" id="txt_SiteID" />
+										<div class="content-div" align="left">
+											<a href="#" id="btn_GetSiteID" class="dont-have-ID"> I
+												don't have a Site ID? </a> <input class="button"
+												id="btn_SiteConfigSubmit" value="Submit" type="submit"
+												data-role="none">
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="site-IDL-container">
+								Catalyst Mobile
+								<p>Catalyst Mobile lets you download courses to complete on
+									the go. Once your course is downloaded, you can complete it
+									anywhere, anytime, with no need for an Internet connection.</p>
+							</div>
+							<div class="site-IDL-container-siteID">
+								Catalyst Mobile <br />
+								<p>Catalyst Mobile lets you download courses to complete on
+									the go. Once your course is downloaded, you can complete it
+									anywhere, anytime, with no need for an Internet connection.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- #siteconfig end-->
+		<!-- #login start-->
+		<div data-role="page" id="login" class="scrollable">
+			<div id="emptySpace"></div>
+			<div data-role="content">
+				<div class="site-ID-container">
+					<div class="site-IDR-container">
+						<form id="userLoginForm" autocomplete="off">
+							<figure>
+								<img class="imgPartnerLogo imgSmallLogo" id="imgLoginLogo"
+									data-rel="external" />
+							</figure>
+							<input type="text" class="text-field username"
+								placeholder="User Name" id="txt_userName" /> <input
+								type="password" class="text-field password"
+								placeholder="Password" id="txt_password" />
+							<div class="content-div" align="left">
+								<input type="submit" data-role="none" class="button"
+									id="btn_Login1" /> <a id="forGotPwd" href="#forgot"
+									class="dont-have-ID"> Forgot your password ? </a>
+							</div>
+						</form>
+					</div>
+					<div class="site-IDL-container">
+						Catalyst Mobile
+						<p>Catalyst Mobile lets you download courses to complete on the
+							go. Once your course is downloaded, you can complete it anywhere,
+							anytime, with no need for an Internet connection.</p>
+					</div>
+					<div class="site-IDL-container-login">
+						Catalyst Mobile <br />
+						<p>Catalyst Mobile lets you download courses to complete on the
+							go. Once your course is downloaded, you can complete it anywhere,
+							anytime, with no need for an Internet connection.</p>
+					</div>
+				</div>
+				<div class="enter-siteId-link">
+					<a href="#siteconfig" id="btnGotoConfigPage"> Enter your site ID
+					</a>
+				</div>
+			</div>
+			<!-- /content -->
+		</div>
+		<!-- #login end -->
+		<!-- #forgot start-->
+		<div data-role="page" id="forgot">
+			<div id="emptySpace"></div>
+			<div data-role="content">
+				<div class="site-ID-container">
+					<div class="site-IDR-container">
+						<form class="reset_pwd">
+							<figure>
+								<img class="imgPartnerLogo imgSmallLogo" id="imgForgotLogo" />
+							</figure>
+							<input type="text" class="forgotusername" placeholder="E-mail"
+								id="forgot_email_val" name="loc_email" />
+							<div class="content-div" align="left">
+								<a id="forGotPwd1" href="#login" class="dont-have-ID"> Return
+									to Sign In </a> <input data-role="none" class="button"
+									id="btn_forgot" value="Reset Password" />
+							</div>
+						</form>
+						<div class="thanks_container" style="display: none;">
+							<figure>
+								<img class="imgPartnerLogo imgSmallLogo" id="imgThksLogo" />
+							</figure>
+							<div>
+								<p>Thank You!</p>
+								<p>An E-mail has been sent to</p>
+								<p>reset your password.</p>
+							</div>
+							<a id="forGotPwd" href="#login" class="dont-have-ID"> Return
+								to Sign In </a>
+						</div>
+					</div>
+					<div class="site-IDL-container">
+						Catalyst Mobile
+						<p>Catalyst Mobile lets you download courses to complete on the
+							go. Once your course is downloaded, you can complete it anywhere,
+							anytime, with no need for an Internet connection.</p>
+					</div>
+					<div class="site-IDL-container-forgotpwd">
+						Catalyst Mobile <br />
+						<p>Catalyst Mobile lets you download courses to complete on the
+							go. Once your course is downloaded, you can complete it anywhere,
+							anytime, with no need for an Internet connection.</p>
+					</div>
+				</div>
+				<div class="enter-siteId-link">
+					<a href="#siteconfig" id="btnGotoConfigPage"> Enter your site ID
+					</a>
+				</div>
+			</div>
+			<!-- /content -->
+		</div>
+		<!-- #forgot end -->
+		<div data-role="page" id="nomodulespage" class="customPage">
+			<div id="emptySpace"></div>
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="customHeader">
+					<div class="logo-block">
+						<img class="imgPartnerLogo" id="imglandingLogo" src="">
+					</div>
+					<div class="tabs-block">
+						<div class="tab1 active" id="mandatory">Required</div>
+						<div class="tab2" id="optional">Optional</div>
+					</div>
+					<div class="header-right-container">
+						<div class="user-names-container">
+							<div class="lname"></div>
+							<div class="fname"></div>
+						</div>
+						<div class="signOut-block">
+							<a href="#" class="signBtn-icon ui-link"> Sign Out </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /header -->
+			<div class="txtcenter" data-role="content">You have no courses
+				currently assigned to you. You can review and access previously
+				completed courses from the History icon.</div>
+			<div data-role="footer" class="custom-footer" data-position="fixed"
+				data-tap-toggle="false">
+				<div class="power-block">
+					<span class="footer-logo"> &nbsp; </span>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example" align="center">
+					<ul>
+						<li><a href="#landingpage" id="modules"
+							class="modulesPage ui-btn-active ftr-btn-Lactive ui-state-persist"
+							data-icon="custom" data-tap-toggle="false"> Courses </a></li>
+						<li><a href="#downloadsPage" id="downloads"
+							class="downloadsPage ftr-btn-Dinactive" data-icon="custom"
+							data-tap-toggle="false"> Downloads </a></li>
+						<li><a href="#historyPage" id="history"
+							class="historyPage ftr-btn-Hiinactive" data-icon="custom"
+							data-tap-toggle="false"> History </a></li>
+						<li><a href="#howItWorks" id="how-it-works"
+							class="howItWorksPage ftr-btn-Hinactive" data-icon="custom"
+							data-tap-toggle="false"> How it Works </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-1" align="center">
+					<ul>
+						<li><a href="#moreopPage" id="moreop"
+							class="moreoptions ftr-btn-Minactive" data-icon="custom"
+							data-tap-toggle="false"> More </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-2" align="center">
+					<ul>
+						<li><a href="#" id="refresh" class="refreshPage"
+							data-icon="custom"> Sync </a></li>
+						<li><a href="#" id="settings" class="settings"
+							data-icon="custom" data-isclicked="false"> Options </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- #no modules end-->
+		<!-- #landingpage start-->
+		<div data-role="page" id="landingpage" class="customPage">
+			<div id="emptySpace"></div>
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="customHeader">
+					<div class="logo-block">
+						<img class="imgPartnerLogo" id="imglandingLogo" src="" />
+					</div>
+					<div class="tabs-block">
+						<div class="tab1 active" id="mandatory">Required</div>
+						<div class="tab2" id="optional">Optional</div>
+					</div>
+					<div class="header-right-container">
+						<div class="user-names-container">
+							<div class="lname"></div>
+							<div class="fname"></div>
+						</div>
+						<div class="signOut-block">
+							<a href="#" class="signBtn-icon"> Sign Out </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /header -->
+			<div data-role="content" class="customBody landingContent"
+				style="overflow-y: scroll;">
+				<div id="downloadAllSection" class="btn-download-global"
+					style="display: none;">
+					<div class="btn-download-all" style="display: none;">Download
+						All</div>
+					<div id="downloadProgressAll" style="display: none;; height: 10px;">
+					</div>
+					<div class="btn-download-all-cancel" style="display: none;"
+						onclick="cancelAllDownloads();">Cancel</div>
+					<div class="btn-download-all-pause" style="display: none;"
+						onclick="pauseAllDownload();">Pause</div>
+					<div class="btn-download-all-resume" style="display: none;"
+						onclick="resumeAllDownload();">Resume</div>
+					<div id="downloadStatusAll" style="display: none;"></div>
+				</div>
+				<div></div>
+				<div id="mandatory_catalysts">
+					<div id="mandatory-scroller">
+						<ul class="custom-catalyst-list-block" id="mandatory_categoryList">
+						</ul>
+					</div>
+				</div>
+				<div id="optional_catalysts">
+					<div id="optional-scroller">
+						<ul class="custom-catalyst-list-block" id="optional_categoryList">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- /content -->
+			<div data-role="footer" class="custom-footer" data-position="fixed"
+				data-tap-toggle="false">
+				<div class="power-block">
+					<span class="footer-logo"> &nbsp; </span>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example" align="center">
+					<ul>
+						<li><a href="#landingpage" id="modules"
+							class="modulesPage ui-btn-active ftr-btn-Lactive ui-state-persist"
+							data-icon="custom" data-tap-toggle="false"> Courses </a></li>
+						<li><a href="#downloadsPage" id="downloads"
+							class="downloadsPage ftr-btn-Dinactive" data-icon="custom"
+							data-tap-toggle="false"> Downloads </a></li>
+						<li><a href="#historyPage" id="history"
+							class="historyPage ftr-btn-Hiinactive" data-icon="custom"
+							data-tap-toggle="false"> History </a></li>
+						<li><a href="#howItWorks" id="how-it-works"
+							class="howItWorksPage ftr-btn-Hinactive" data-icon="custom"
+							data-tap-toggle="false"> How it Works </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-1" align="center">
+					<ul>
+						<li><a href="#moreopPage" id="moreop"
+							class="moreoptions ftr-btn-Minactive" data-icon="custom"
+							data-tap-toggle="false"> More </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-2" align="center">
+					<ul>
+						<li><a href="#" id="refresh" class="refreshPage"
+							data-icon="custom"> Sync </a></li>
+						<li><a href="#" id="settings" class="settings"
+							data-icon="custom" data-isclicked="false"> Options </a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /footer -->
+		</div>
+		<!-- #landingpage end-->
+		<!-- #modulesPreview start-->
+		<div data-role="page" id="modulesPreview" class="customPage">
+			<div id="emptySpace"></div>
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="customHeader">
+					<div class="logo-block">
+						<img class="imgPartnerLogo" id="imgModulesPreviewLogo" src="" />
+					</div>
+					<a href="#landingpage" data-rel="back"
+						class="ui-btn-left back-btn-disable" data-role='button'
+						data-theme="a" id="moduleDescBack"> Back </a>
+					<div class="pageHeaderHolder">
+						<div class="pageHeader">Course Description</div>
+					</div>
+					<div class="header-right-container">
+						<div class="user-names-container">
+							<div class="lname"></div>
+							<div class="fname"></div>
+						</div>
+						<div class="signOut-block">
+							<a href="#" class="signBtn-icon"> Sign Out </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Login -->
+			<div data-role="content" class="modulePreviewheight">
+				<div id="modulesPreviewWrapper" class="course-description">
+					<!-- div id="modPreScroller"-->
+					<ul class="custom-catalyst-list-block" id="moduleList">
+					</ul>
+					<!-- /div -->
+				</div>
+			</div>
+			<div data-role="footer" class="custom-footer" data-position="fixed"
+				data-tap-toggle="false">
+				<div class="power-block">
+					<span class="footer-logo"> &nbsp; </span>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example" align="center">
+					<ul>
+						<li><a href="#landingpage" id="modules"
+							class="modulesPage ui-btn-active ftr-btn-Lactive ui-state-persist"
+							data-icon="custom" data-tap-toggle="false"> Courses </a></li>
+						<li><a href="#downloadsPage" id="downloads"
+							class="downloadsPage ftr-btn-Dinactive" data-icon="custom"
+							data-tap-toggle="false"> Downloads </a></li>
+						<li><a href="#historyPage" id="history"
+							class="historyPage ftr-btn-Hiinactive" data-icon="custom"
+							data-tap-toggle="false"> History </a></li>
+						<li><a href="#howItWorks" id="how-it-works"
+							class="howItWorksPage ftr-btn-Hinactive" data-icon="custom"
+							data-tap-toggle="false"> How it Works </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-1" align="center">
+					<ul>
+						<li><a href="#moreopPage" id="moreop"
+							class="moreoptions ftr-btn-Minactive" data-icon="custom"
+							data-tap-toggle="false"> More </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-2" align="center">
+					<ul>
+						<li><a href="#" id="refresh" class="refreshPage"
+							data-icon="custom"> Sync </a></li>
+						<li><a href="#" id="settings" class="settings"
+							data-icon="custom" data-isclicked="false"> Options </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- page ends -->
+		<!-- #modulesPreview end-->
+		<!-- #downloadsPage start-->
+		<div data-role="page" id="downloadsPage">
+			<div id="emptySpace"></div>
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="customHeader">
+					<div class="logo-block">
+						<img class="imgPartnerLogo" id="imgDownloadsPageLogo" src="" />
+					</div>
+					<div class="pageHeaderHolder">
+						<div class="pageHeader">Downloads</div>
+					</div>
+					<div class="header-right-container">
+						<div class="user-names-container">
+							<div class="lname"></div>
+							<div class="fname"></div>
+						</div>
+						<div class="signOut-block">
+							<a href="#" class="signBtn-icon"> Sign Out </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /header -->
+			<div data-role="content">
+				<div id="downloadWrapper">
+					<div id="download-scroller">
+						<ul class="custom-catalyst-list-block" id="downloadsList">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" class="custom-footer" data-position="fixed"
+				data-tap-toggle="false">
+				<div class="power-block">
+					<span class="footer-logo"> &nbsp; </span>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example" align="center">
+					<ul>
+						<li><a href="#landingpage" id="modules"
+							class="modulesPage ui-btn-active ftr-btn-Linactive ui-state-persist"
+							data-icon="custom" data-tap-toggle="false"> Courses </a></li>
+						<li><a href="#downloadsPage" id="downloads"
+							class="downloadsPage ftr-btn-Dactive" data-icon="custom"
+							data-tap-toggle="false"> Downloads </a></li>
+						<li><a href="#historyPage" id="history"
+							class="historyPage ftr-btn-Hiinactive" data-icon="custom"
+							data-tap-toggle="false"> History </a></li>
+						<li><a href="#howItWorks" id="how-it-works"
+							class="howItWorksPage ftr-btn-Hinactive" data-icon="custom"
+							data-tap-toggle="false"> How it Works </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-1" align="center">
+					<ul>
+						<li><a href="#moreopPage" id="moreop"
+							class="moreoptions ftr-btn-Minactive" data-icon="custom"
+							data-tap-toggle="false"> More </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-2" align="center">
+					<ul>
+						<li><a href="#" id="refresh" class="refreshPage"
+							data-icon="custom"> Sync </a></li>
+						<li><a href="#" id="settings" class="settings"
+							data-icon="custom" data-isclicked="false"> Options </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- #downloadsPage end-->
+		<!-- #historyPage start-->
+		<div data-role="page" id="historyPage">
+			<div id="emptySpace"></div>
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="customHeader">
+					<div class="logo-block">
+						<img class="imgPartnerLogo" id="imgHistoryLogo" src="" />
+					</div>
+					<div class="pageHeaderHolder">
+						<div class="pageHeader">History</div>
+					</div>
+					<div class="header-right-container">
+						<div class="user-names-container">
+							<div class="lname"></div>
+							<div class="fname"></div>
+						</div>
+						<div class="signOut-block">
+							<a href="#" class="signBtn-icon"> Sign Out </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /header -->
+			<div data-role="content">
+				<div id="historyWrapper">
+					<div id="historyScroller">
+						<div class="history_row_title">
+							<ul>
+								<li class="item-1"><span> Title </span></li>
+								<li class="item-2">Catalog ID</li>
+								<li class="item-3">Time Spent</li>
+								<li class="item-4">Completed</li>
+								<li class="item-5">Synced</li>
+								<li class="item-6">Course Options</li>
+							</ul>
+						</div>
+						<div id="historyData"></div>
+						<div class="noModule">No Modules to Show</div>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" class="custom-footer" data-position="fixed"
+				data-tap-toggle="false">
+				<div class="power-block">
+					<span class="footer-logo"> &nbsp; </span>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example" align="center">
+					<ul>
+						<li><a href="#landingpage" id="modules"
+							class="modulesPage ui-btn-active ftr-btn-Linactive ui-state-persist"
+							data-icon="custom" data-tap-toggle="false"> Courses </a></li>
+						<li><a href="#downloadsPage" id="downloads"
+							class="downloadsPage ftr-btn-Dinactive" data-icon="custom"
+							data-tap-toggle="false"> Downloads </a></li>
+						<li><a href="#historyPage" id="history"
+							class="historyPage ftr-btn-Hiactive" data-icon="custom"
+							data-tap-toggle="false"> History </a></li>
+						<li><a href="#howItWorks" id="how-it-works"
+							class="howItWorksPage ftr-btn-Hinactive" data-icon="custom"
+							data-tap-toggle="false"> How it Works </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-1" align="center">
+					<ul>
+						<li><a href="#moreopPage" id="moreop"
+							class="moreoptions ftr-btn-Minactive" data-icon="custom"
+							data-tap-toggle="false"> More </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-2" align="center">
+					<ul>
+						<li><a href="#" id="refresh" class="refreshPage"
+							data-icon="custom"> Sync </a></li>
+						<li><a href="#" id="settings" class="settings"
+							data-icon="custom" data-isclicked="false"> Options </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- #historyPage end-->
+		<!-- #howItWorks start-->
+		<div data-role="page" id="howItWorks">
+			<div id="emptySpace"></div>
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="customHeader">
+					<div class="logo-block">
+						<img class="imgPartnerLogo" id="imgHowItWorksLogo" src="" />
+					</div>
+					<div class="pageHeaderHolder">
+						<div class="pageHeader">How it Works</div>
+					</div>
+					<div class="header-right-container">
+						<div class="user-names-container">
+							<div class="lname"></div>
+							<div class="fname"></div>
+						</div>
+						<div class="signOut-block">
+							<a href="#" class="signBtn-icon"> Sign Out </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /header -->
+			<div data-role="content">
+				<div id="howItWorks_content">
+					<div id="howItWorksWrapper">
+						<div id="howItWorksScroller">
+							<div class="how-container">
+								<div class="how-row-1">
+									<div class="feature-1">
+										<img src="images/app/download1.png" />
+										<div class="howDownloadModuleTxt">Download Modules</div>
+									</div>
+									<div class="feature-2">
+										<img src="images/app/take-course.png" />
+										<div class="howTakeModuleTxt">Take Modules Anywhere</div>
+									</div>
+									<div class="feature-3">
+										<img src="images/app/sync_howitworks.png" />
+										<div class="howSyncTxt">Sync Automatically</div>
+									</div>
+								</div>
+								<div class="how-row-2">
+									<div class="how-row-left">
+										<img src="images/app/howdownload.png" class="howdownload" /> <span>
+											Take a course online, or download it to take anywhere,
+											anytime. </span> <img src="images/app/hownotif.png" class="hownotif" />
+										<span> Get notifications when courses are assigned and
+											due. </span> <img src="images/app/howoffline.png" class="howoffline" />
+										<span> Take downloaded courses when your device is
+											offline. </span>
+									</div>
+									<div class="how-row-right">
+										<img src="images/app/howsync.png" class="howsync" /> <span>
+											Your completion status is synced automatically when you are
+											back online. </span> <img src="images/app/howhistory.png"
+											class="howhistory" /> <span> Review and retake
+											completed courses in your history if still active. </span> <img
+											src="images/app/howoptions.png" class="howoptions" /> <span>
+											Customize your experience settings. </span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" class="custom-footer" data-position="fixed"
+				data-tap-toggle="false">
+				<div class="power-block">
+					<span class="footer-logo"> &nbsp; </span>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example" align="center">
+					<ul>
+						<li><a href="#landingpage" id="modules"
+							class="modulesPage ui-btn-active ftr-btn-Linactive ui-state-persist"
+							data-icon="custom" data-tap-toggle="false"> Courses </a></li>
+						<li><a href="#downloadsPage" id="downloads"
+							class="downloadsPage ftr-btn-Dinactive" data-icon="custom"
+							data-tap-toggle="false"> Downloads </a></li>
+						<li><a href="#historyPage" id="history"
+							class="historyPage ftr-btn-Hiinactive" data-icon="custom"
+							data-tap-toggle="false"> History </a></li>
+						<li><a href="#howItWorks" id="how-it-works"
+							class="howItWorksPage ftr-btn-Hactive" data-icon="custom"
+							data-tap-toggle="false"> How it Works </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-1" align="center">
+					<ul>
+						<li><a href="#moreopPage" id="moreop"
+							class="moreoptions ftr-btn-Minactive" data-icon="custom"
+							data-tap-toggle="false"> More </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-2" align="center">
+					<ul>
+						<li><a href="#" id="refresh" class="refreshPage"
+							data-icon="custom"> Sync </a></li>
+						<li><a href="#" id="settings" class="settings"
+							data-icon="custom" data-isclicked="false"> Options </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- #howItWorks end-->
+		<!-- #moreoppage starts-->
+		<div data-role="page" id="moreopPage">
+			<div id="emptySpace"></div>
+			<div data-role="header" data-position="fixed" data-tap-toggle="false">
+				<div class="customHeader">
+					<div class="logo-block">
+						<img class="imgPartnerLogo" id="imgHowItWorksLogo" src="" />
+					</div>
+					<div class="pageHeaderHolder">
+						<div class="pageHeader">More</div>
+					</div>
+					<div class="header-right-container">
+						<div class="user-names-container">
+							<div class="lname"></div>
+							<div class="fname"></div>
+						</div>
+						<div class="signOut-block">
+							<a href="#" class="signBtn-icon"> Sign Out </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-role="content">
+				<div id="moreopPage_content">
+					<ul data-role="listview">
+						<li data-icon="false"><a href="#" id="syncAppMobile"
+							class="syncAppMobile" data-icon="custom" data-isclicked="false">
+								<img src="./images/app/sync.png">
+								<p class="ui-li-heading">Sync</p>
+								<p class="ui-li-desc" id="rowLastSyncTime">Last Sync: Not
+									Synced</p>
+						</a></li>
+						<li data-icon="false"><a href="#" id="settingsPopover"
+							class="settingsPopover" data-icon="custom" data-isclicked="false">
+								<img src="./images/app/options.png">
+								<p class="ui-li-heading">Options</p>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div data-role="footer" class="custom-footer" data-position="fixed"
+				data-tap-toggle="false">
+				<div class="power-block">
+					<span class="footer-logo"> &nbsp; </span>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example" align="center">
+					<ul>
+						<li><a href="#landingpage" id="modules"
+							class="modulesPage ui-btn-active ftr-btn-Linactive ui-state-persist"
+							data-icon="custom" data-tap-toggle="false"> Courses </a></li>
+						<li><a href="#downloadsPage" id="downloads"
+							class="downloadsPage ftr-btn-Dinactive" data-icon="custom"
+							data-tap-toggle="false"> Downloads </a></li>
+						<li><a href="#historyPage" id="history"
+							class="historyPage ftr-btn-Hiinactive" data-icon="custom"
+							data-tap-toggle="false"> History </a></li>
+						<li><a href="#howItWorks" id="how-it-works"
+							class="howItWorksPage ftr-btn-Hinactive" data-icon="custom"
+							data-tap-toggle="false"> How it Works </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-1" align="center">
+					<ul>
+						<li><a href="#moreopPage" id="moreop"
+							class="moreoptions ftr-btn-Mactive" data-icon="custom"
+							data-tap-toggle="false"> More </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-2" align="center">
+					<ul>
+						<li><a href="#" id="refresh" class="refreshPage"
+							data-icon="custom"> Sync </a></li>
+						<li><a href="#" id="settings" class="settings"
+							data-icon="custom" data-isclicked="false"> Options </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- #moreoppage ends-->
+		<!-- #coursePlayer start-->
+		<div data-role="page" id="coursePlayer" data-dom-cache="false">
+			<div id="placeholder_contentIFrame" style="height: 100% !important;">
+			</div>
+			<!-- Footer for Course Play -->
+			<div data-role="footer" class="custom-footer" data-position="fixed"
+				data-tap-toggle="false">
+				<div class="power-block">
+					<span class="footer-logo"> &nbsp; </span>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example" align="center">
+					<ul>
+						<li><a href="#landingpage" id="modules"
+							class="modulesPage ui-btn-active ftr-btn-Linactive ui-state-persist"
+							data-icon="custom" data-tap-toggle="false"> Courses </a></li>
+						<li><a href="#downloadsPage" id="downloads"
+							class="downloadsPage ftr-btn-Dinactive" data-icon="custom"
+							data-tap-toggle="false"> Downloads </a></li>
+						<li><a href="#historyPage" id="history"
+							class="historyPage ftr-btn-Hiinactive" data-icon="custom"
+							data-tap-toggle="false"> History </a></li>
+						<li><a href="#howItWorks" id="how-it-works"
+							class="howItWorksPage ftr-btn-Hiinactive" data-icon="custom"
+							data-tap-toggle="false"> How it Works </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-1" align="center">
+					<ul>
+						<li><a href="#moreopPage" id="moreop"
+							class="moreoptions ftr-btn-Minactive" data-icon="custom"
+							data-tap-toggle="false"> More </a></li>
+					</ul>
+				</div>
+				<div data-role="navbar" class="nav-glyphish-example-2" align="center">
+					<ul>
+						<li><a href="#" id="refresh" class="refreshPage"
+							data-icon="custom"> Sync </a></li>
+						<li><a href="#" id="settings" class="settings"
+							data-icon="custom" data-isclicked="false"> Options </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Footer End for Course Play-->
+		<!-- #coursePlayer ends-->
+		<!--  Alerts Starts -->
+		<div id="signOutConfirm"
+			data-options='{"mode":"blank","headerText":"Sign Out","headerClose":false,"blankContent":true,"zindex":10000000}'
+			style="display: none;">
+			<p>Are you sure you want to sign out?</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupInActiveButton" id="signOutConfirmNo"> No </a> <a
+					data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton" id='signOutConfirmYes'> Yes </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="newModuleNotification"
+			data-options='{"mode":"blank","headerText":"Catalyst Mobile","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>New modules have been assigned to you.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupInActiveButton" id='newModuleViewNow'> Close </a> <a
+					rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton" id="newModuleConfirm"> View Now </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="dueModuleNotification"
+			data-options='{"mode":"blank","headerText":"Modules Due","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>There are modules in your queue that are due soon.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton" id='dueModuleConfirm'> View Now </a> <a
+					rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupInActiveButton"> Cancel </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="modulePreviewPrevious"
+			data-options='{"mode":"blank","headerText":"Preview Not Available","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Do you Want to go to Next Module?</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupInActiveButton"> Cancel </a> <a rel='close'
+					data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton" id='modulePreviousConfirm'> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="modulePreviewNext"
+			data-options='{"mode":"blank","headerText":"Preview Not Available","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Do you Want to go to Previous Module?</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupInActiveButton"> Cancel </a> <a rel='close'
+					data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton" id='moduleNextConfirm'> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="syncSuccessPop"
+			data-options='{"mode":"blank","headerText":"Success","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Course synced to server successfully.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' id="syncSuccess" data-role='button' data-inline='true'
+					data-mini='true' data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="historyNoPreview"
+			data-options='{"mode":"blank","headerText":"No More Modules Available to 
+	         swipe","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="deleteSuccessPop"
+			data-options='{"mode":"blank","headerText":"Module Deleted","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>The module has been removed from the device.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="invalidSigninError"
+			data-options='{"mode":"blank","headerText":"Invalid Credentials","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please enter valid sign-in information and password.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="signinFailurePop"
+			data-options='{"mode":"blank","headerText":"Please Sign In","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please enter your sign-in information and password.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="forgotPwFailurePop"
+			data-options='{"mode":"blank","headerText":"Reset Password","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please enter valid E-mail address to reset your password.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="noSiteId"
+			data-options='{"mode":"blank","headerText":"No Site ID","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please ask your employer to provide the Site ID.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#' id="noSiteIdOk"
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="wrongSiteId"
+			data-options='{"mode":"blank","headerText":"Invalid Site ID","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please enter a valid Site ID that was provided by your
+				employer.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					id="siteConfigFailurePopOk" class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="siteConfigFailurePop"
+			data-options='{"mode":"blank","headerText":"Enter Site ID","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please enter the Site ID that was provided by your employer.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					id="siteConfigFailurePopOk" class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="connectionRequired"
+			data-options='{"mode":"blank","headerText":"Connection Required","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>An internet connection is required to</p>
+			<p>set up the mobile application</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a id="connectionRequiredClosebtn" rel='close' data-role='button'
+					data-inline='true' data-mini='true' data-theme='c'
+					data-corners='false' href='#' class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="connectionRequiredToDownload"
+			data-options='{"mode":"blank","headerText":"Connection Required","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>An internet connection is required to</p>
+			<p>continue download</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a id="connectionRequiredClosebtn" rel='close' data-role='button'
+					data-inline='true' data-mini='true' data-theme='c'
+					data-corners='false' href='#' class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="moduleNotAvailable"
+			data-options='{"mode":"blank","headerText":"Module Not Available","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>No internet connection or</p>
+			<p>downloaded module not found.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="optionsChange"
+			data-options='{"mode":"blank","headerText":"Change Options","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Disable Wi-Fi Downloads only in settings to allow</p>
+			<p>downloading on your mobile network</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="moduleDownloading"
+			data-options='{"mode":"blank","headerText":"Module Downloading","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please wait until the module download</p>
+			<p>is complete before playing the module.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="connectionRequiredDownload"
+			data-options='{"mode":"blank","headerText":"Connection Required","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>An internet connection is required</p>
+			<p>to continue download.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="deviceStorage"
+			data-options='{"mode":"blank","headerText":"Device Storage","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>More space is needed on the device</p>
+			<p>in order to download this module.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="serviceErrorAlert"
+			data-options='{"mode":"blank","headerText":"Error","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p id="serviceErrorText"></p>
+			<p>Please Try Again.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="connectionRequiredResync"
+			data-options='{"mode":"blank","headerText":"Connection Required","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Connection has been lost.</p>
+			<p>Please reconnect and re-sync.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="passwordValidation"
+			data-options='{"mode":"blank","headerText":"Invalid password","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p id="messageText"></p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="SyncingInformation"
+			data-options='{"mode":"blank","headerText":"Syncing Information","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p id="messageText"></p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<img src="css\core\images\ajax-loader.gif" alt=""
+					style="height: 50px;" />
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="siteIdValidation"
+			data-options='{"mode":"blank","headerText":"Error","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p id="errorText"></p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="moduleNotDownloaded"
+			data-options='{"mode":"blank","headerText":"Error","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please download the module before playing</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="moduleDownloadInProgress"
+			data-options='{"mode":"blank","headerText":"Module Downloading","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p id="errorText">Please wait untill the module download</p>
+			<p id="errorText1">is complete before playing the module</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a id="moduleDownloadInProgressOk" rel='close' data-role='button'
+					data-inline='true' data-mini='true' data-theme='c'
+					data-corners='false' href='#' class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="courseNotAvailable"
+			data-options='{"mode":"blank","headerText":"Course Not Available","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>No internet connection or</p>
+			<p>course not found.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a id="courseNotAvailableOk" rel='close' data-role='button'
+					data-inline='true' data-mini='true' data-theme='c'
+					data-corners='false' href='#' class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="alreadyDownloaded"
+			data-options='{"mode":"blank","headerText":"Already Downloaded","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p id="errorText">Selected language course</p>
+			<p id="errorText1">is already downloaded</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a id="alreadyDownloadedOk" rel='close' data-role='button'
+					data-inline='true' data-mini='true' data-theme='c'
+					data-corners='false' href='#' class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="syncFailed"
+			data-options='{"mode":"blank","headerText":"Sync Failed","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Sync Failed due to some error.</p>
+			<p>Please try again.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a id="syncFailedOk" rel='close' data-role='button'
+					data-inline='true' data-mini='true' data-theme='c'
+					data-corners='false' href='#' class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="syncFailedNoCourses"
+			data-options='{"mode":"blank","headerText":"Sync Failed","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>Please start a course before syncing to server.</p>
+			<p>And then try again.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="syncSuccess2"
+			data-options='{"mode":"blank","headerText":"Sync Success","headerClose":false,"blankContent":true}'
+			style="display: none;">
+			<p>All courses are up to date.</p>
+			<p></p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton"> OK </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="autoDwnldConfirm"
+			data-options='{"mode":"blank","headerText":"Alert","headerClose":false,"blankContent":true,"zindex":10000000}'
+			style="display: none;">
+			<p>Are you sure you want to auto download all the courses?</p>
+			<p>This may result in data charges on your carrier network.</p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupInActiveButton" id="autoDwnldConfirmNo"> No </a> <a
+					data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton" id='autoDwnldConfirmYes'> Yes </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<div id="autoDeleteConfirm"
+			data-options='{"mode":"blank","headerText":"Alert","headerClose":false,"blankContent":true,"zindex":10000000}'
+			style="display: none;">
+			<p>Are you sure you want to auto delete all the downloaded
+				courses?</p>
+			<p></p>
+			<div class='space'>&nbsp;</div>
+			<p>
+				<a rel='close' data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupInActiveButton" id="autoDeleteConfirmNo"> No </a> <a
+					data-role='button' data-inline='true' data-mini='true'
+					data-theme='c' data-corners='false' href='#'
+					class="popupActiveButton" id='autoDeleteConfirmYes'> Yes </a>
+			</p>
+			<div class='space'>&nbsp;</div>
+		</div>
+		<!--  Alerts Ends -->
+		<a href="#" id="openConnectionRequired" data-role="button"
+			style="display: none;"> Open Network Dialog </a>
+		<a href="#" id="openSignoutConfirm" data-role="button"
+			style="display: none;"> Open Signout Confirm Dialog </a>
+		<script src="js/framework/core/jquery.js"></script>
+		<script src="js/framework/core/ui/jquery-ui.custom.js"></script>
+		<script src="js/framework/core/ui/jquery.ui.core.js"></script>
+		<script src="js/framework/core/ui/jquery.ui.widget.js"></script>
+		<script src="js/framework/core/ui/jquery.ui.progressbar.js"></script>
+		<script src="js/framework/core/jquery.mobile-1.3.0.min.js"></script>
+		<script src="js/framework/core/jquery.xml2json.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/config/config.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/app/errorMessages.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/db/db.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/app/custom.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/app/application.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/app/controlManipulation.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/webservices/webServiceHandler.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/Generic/generic.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/Generic/developmentSettings.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/Generic/dateFormat.js"></script>
+		<script type="text/javascript" charset="utf-8"
+			src="js/framework/core/jquery.mobile.simpledialog2.js"></script>
+		<script type="application/javascript"
+			src="js/framework/core/iscroll.js"></script>
+		<script type="application/javascript" charset="utf-8"
+			src="js/Generic/soap.js"></script>
+		<script>
+			var DevicePlatform = "web";
+		
+			$(window).load(function() {
+			    for (file in fileData) {
+			        idArray = [];
+			        for (var data in fileData[file].data) {
+			            $("#progress" + fileData[file].data[data].id).progressbar({
+			                value: 0,
+			                max: 100
+			            });
+			            idArray.push(fileData[file].data[data].moduleId + fileData[file].data[data].language);
+			        }
+			    }
+			});
+		
+			function loaded() {
+			    mandatoryScroller = new iScroll('mandatory_catalysts', {
+			        bounce: false
+			    });
+			    optionalScroller = new iScroll('optional_catalysts', {
+			        bounce: false
+			    });
+			    historyScroller = new iScroll('historyWrapper', {
+			        bounce: false
+			    });
+			    downloadScroller = new iScroll('downloadWrapper', {
+			        bounce: false
+			    });
+			    moreOptScroller = new iScroll('moreOptWrapper', {
+			        bounce: false
+			    });
+			}
+			document.addEventListener('DOMContentLoaded', function() {
+			    setTimeout(loaded, 100);
+			}, false);
+			window.addEventListener("resize", function() {
+			    printLog("resize called" + window.orientation);
+	
+			    if (typeof mandatoryScroller != 'undefined') {
+			        setTimeout(function() {
+			            mandatoryScroller.refresh();
+			        }, 250);
+			    }
+		
+			    if (typeof downloadScroller != 'undefined') {
+			        setTimeout(function() {
+			            downloadScroller.refresh();
+			        }, 250);
+			    }
+		
+			    if (typeof optionalScroller != 'undefined') {
+			        setTimeout(function() {
+			            optionalScroller.refresh();
+			        }, 250);
+			    }
+		
+			    if (typeof moreOptScroller != 'undefined') {
+			        setTimeout(function() {
+			            moreOptScroller.refresh();
+			        }, 250);
+			    } else {
+			        moreOptScroller = new iScroll('moreWrapper', {
+			            bounce: false
+			        });
+			        if (typeof moreOptScroller != 'undefined') {
+			            setTimeout(function() {
+			                moreOptScroller.refresh();
+			            }, 250);
+			        }
+			    }
+		
+			    if (typeof moduleDescScroller1 != 'undefined') {
+			        setTimeout(function() {
+			            moduleDescScroller1.refresh();
+			        }, 250);
+			    } else
+			        moduleDescScroller1 = new iScroll('moduleDescWrapper1', {
+			            bounce: false
+			        });
+			}, false);
+		
+			function stopScrolling(touchEvent) {
+			    touchEvent.preventDefault();
+			}
+			document.addEventListener('touchmove', stopScrolling, false);
+		
+			var isMobile = {
+			    iOS: function() {
+			        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+			    },
+			    Android: function() {
+			        return navigator.userAgent.match(/Android/i);
+			    }
+			};
+		
+			function LoadCordova() {
+			    printLog('load cordova');
+			    			    
+			    try {
+			        if (isMobile.iOS()) {
+			            DevicePlatform = "iOS";
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/framework/core/iOS/cordova-2.5.0.js">\x3C/script>');
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/app/iOS/cordova-download.js">\x3C/script>');
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/framework/app/iOS/filesystem.js">\x3C/script>');
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/app/iOS/LocalNotification.js">\x3C/script>');
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/app/iOS/orientationLock.js">\x3C/script>');
+			        } else if (isMobile.Android()) {
+			            DevicePlatform = "Android";
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/framework/core/cordova-2.5.0.js">\x3C/script>');
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/app/cordova-download.js">\x3C/script>');
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/app/LocalNotification.js">\x3C/script>');
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/framework/app/filesystem.js">\x3C/script>');
+			            $('head').append(
+			                '\x3Cscript type="text/javascript" src="js/app/orientationLock.js">\x3C/script>');
+			        }
+			    } catch (e) {
+			        $('head').append(
+			            '\x3Cscript type="text/javascript" src="js/framework/core/cordova-2.5.0.js">\x3C/script>');
+			        $('head').append(
+			            '\x3Cscript type="text/javascript" src="js/app/cordova-download.js">\x3C/script>');
+			        DevicePlatform = "web";
+			    }
+			}
+	      </script>
+	</body>
+</html>

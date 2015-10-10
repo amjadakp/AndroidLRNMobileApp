@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, LRNcatalyst!</string>
+    <string name="app_name">LRN</string>
+    <string name="pause_text">Pause Download</string>
+    <string name="dwn_course">Download Course</string>
+    <string name="resume_download">Resume Download</string>
+    <string name="cancel_download">Cancel Download</string>
+    <string name="delete_course">Delete Course</string>
+    <string name="download_time">%1$s %2$s %3$s remaining</string>
+</resources>

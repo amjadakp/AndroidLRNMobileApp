@@ -1,0 +1,54 @@
+
+-----------------------------------------------------------------------------------------------------
+						Instructions to use the file-extraction.jar
+-----------------------------------------------------------------------------------------------------
+
+* Create new Android project.
+
+* Add file-extraction.jar in 'libs' folder
+
+* Add other cordova dependencies such as cordova-2.5.0.jar
+
+* Add 'www' folder to 'assets' folder, which should have 'cordova-download.xml'
+
+* Add following line to res/xml/config.xml
+	<plugin name="Download" value="com.symphonyteleca.lrn.catalyst.download.DownloadPlugin"/>
+	
+* Make following changes to AndroidManifest.xml file:
+	1. Within <application> element, add:
+	
+		<service android:name=".services.DownloadService" >
+            <intent-filter >
+                <action android:name="com.symphonyteleca.lrn.catalyst.download.services.IDownloadService" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".services.PhonegapConnector">
+             <intent-filter>
+                     <action android:name="com.symphonyteleca.lrn.catalyst.download.services.PhonegapConnector"/>
+             </intent-filter>
+        </receiver>
+        
+        
+	2. Within <manifest> element, add:
+	
+		<uses-permission android:name="android.permission.CAMERA" />
+    	<uses-permission android:name="android.permission.VIBRATE" />
+    	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    	<uses-permission android:name="android.permission.INTERNET" />
+    	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+    	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+    	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    	<uses-permission android:name="android.permission.READ_CONTACTS" />
+    	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    	<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    	<uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    	
+ -----------------------------------------------------------------------------------------------------
